@@ -7,7 +7,7 @@ pr: 20
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/20
 branch: feat/dashboard-kpis
 tags: [pr, frontend, dashboard]
-status: aberto
+status: merged
 ---
 
 # PR #20 — feat(dashboard): cards de KPI com gasto mensal e economia
