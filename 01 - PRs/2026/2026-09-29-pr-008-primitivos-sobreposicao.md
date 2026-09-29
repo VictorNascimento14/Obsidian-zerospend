@@ -7,7 +7,7 @@ pr: 8
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/8
 branch: ui/primitivos-sobreposicao
 tags: [pr, frontend, design-system]
-status: aberto
+status: merged
 ---
 
 # PR #8 — ui(primitivos): adicionar Dialog, AlertDialog, DropdownMenu, Sheet, Tooltip e toasts
