@@ -7,7 +7,7 @@ pr: 31
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/31
 branch: feat/onboarding-email
 tags: [pr, frontend, onboarding, integracoes]
-status: aberto
+status: merged
 ---
 
 # PR #31 — feat(onboarding): simular a conexão com o e-mail da empresa
