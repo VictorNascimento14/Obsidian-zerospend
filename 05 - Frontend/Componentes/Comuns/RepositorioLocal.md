@@ -42,6 +42,8 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
     está na sessão e administra a empresa ([[OrganizationSettings]]);
   - `updateAlertSettings(empresa, preferências)`: antecedência e canais, com a mesma regra de papel
     ([[AlertSettings]]);
+  - `inviteMember(empresa, convite)`, `revokeInvitation(id)` e `removeMember(empresa, pessoa)`: membros
+    e convites, com a regra de papel, e ninguém tira o próprio acesso ([[MembersSettings]]);
   - `dismissAlert(empresa, chave)` e `restoreAlert(empresa, chave)`: as dispensas de alerta
     (`dismissals`), e dispensar de novo não muda nada ([[AlertsCenter]]).
 
@@ -62,7 +64,7 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - Tela **nunca** toca `localStorage`: lê por `useDatabase()` e escreve por `getRepository()`.
 - A validação da tela é conforto; a do repositório é a regra.
 - **Campo novo, com padrão na leitura, entra na mesma chave**, como coluna nova com valor padrão no
-  banco: o `parse` completa o que falta (`dismissals` ausente vira `[]`; empresa sem antecedência e
+  banco: o `parse` completa o que falta (`dismissals` e `invitations` ausentes viram `[]`; empresa sem antecedência e
   canais ganha `defaultAlertSettings()`), e o que já estava gravado
   continua valendo. Há teste para isso.
 - **Mudança que quebra a leitura antiga** (renomear, trocar tipo, remover) pede chave nova e
@@ -78,3 +80,4 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - [[2026-09-29-pr-033-central-de-alertas]] — `dismissals`, `dismissAlert` e `restoreAlert`; campo novo com padrão na leitura.
 - [[2026-09-29-pr-035-configuracoes-empresa]] — `updateOrganization`, com a conferência de papel.
 - [[2026-09-29-pr-036-configuracoes-alertas]] — `updateAlertSettings`; empresa sem preferências lida com o padrão.
+- [[2026-09-29-pr-037-configuracoes-membros]] — `invitations`, `inviteMember`, `revokeInvitation`, `removeMember`; `addAccount` aceita convites.

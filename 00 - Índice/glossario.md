@@ -27,6 +27,8 @@ tags: [glossario]
 | **Responsável** | A pessoa da empresa que responde por aquela assinatura — texto livre, porque nem sempre ela tem conta no ZeroSpend. |
 | **Demonstração** (etiqueta) | O que depende do servidor e aparece na tela para mostrar o fluxo: a conexão com o e-mail e a leitura de PDF. Não lê nem grava nada ([[EmailConnectCard]], [[StatementImport]]). |
 | **Dispensar (alerta)** | Marcar um alerta como tratado, para a empresa inteira. Ele some da central e do painel, e volta quando a situação muda: a cobrança seguinte, ou outra ferramenta no grupo ([[AlertsCenter]]). |
+| **Membro / Administração** | Os dois papéis de quem tem acesso a uma empresa. Administração muda os dados, as preferências e quem entra; membro só vê ([[MembersSettings]]). |
+| **Convite** | Chamado para alguém entrar numa empresa. Na v1 nada é enviado: quem já tem conta no navegador entra na hora, e quem cria a conta com o e-mail convidado entra ao criar ([[MembersSettings]]). |
 | **Conta de demonstração** | `admin@zerospend.app` (senha "demonstracao"): administra as duas empresas fictícias. |
 | **BPO financeiro** | Escritório que terceiriza o financeiro de outras empresas. |
 

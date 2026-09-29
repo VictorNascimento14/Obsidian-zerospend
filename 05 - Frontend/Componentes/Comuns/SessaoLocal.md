@@ -22,7 +22,7 @@ Quem está usando o ZeroSpend neste navegador, em qual empresa, e como a senha �
 | `src/lib/domain/types.ts` | `User` (com `passwordHash` e `passwordSalt`), `Membership`, `Role` |
 | `src/lib/data/repository.ts` | `Session`, `CurrentSession`, `currentSession(banco)`, `startSession`, `endSession` |
 | `src/lib/data/password.ts` | `hashPassword(senha, sal)` (PBKDF2-SHA-256, 100 mil iterações) e `newSalt()` |
-| `src/lib/data/auth.ts` | `signIn(repositório, e-mail, senha)`, `SignInError`, `normalizeEmail`, `createAccount(repositório, rascunho)` |
+| `src/lib/data/auth.ts` | `signIn(repositório, e-mail, senha)`, `SignInError`, `createAccount(repositório, rascunho)` e o `normalizeEmail` (que mora em `src/lib/domain/text.ts`) |
 | `src/lib/domain/validation.ts` | `validateAccountDraft` e `PERSONAL_EMAIL_DOMAINS` (e-mail corporativo) |
 | `src/lib/data/store.ts` | `useSession()` — a sessão resolvida, para a tela |
 
@@ -44,7 +44,9 @@ Quem está usando o ZeroSpend neste navegador, em qual empresa, e como a senha �
   `localhost` — fora disso, `hashPassword` falha com a explicação.
 - **Criar conta:** `createAccount` normaliza e valida (nome, e-mail corporativo, senha de 8+, empresa),
   recusa e-mail que já tem conta e grava pessoa + empresa (em real, cotação inicial R$ 5,40) +
-  vínculo de administração + sessão numa só gravação (`addAccount`).
+  vínculo de administração + sessão numa só gravação (`addAccount`). Os **convites pendentes** para o
+  e-mail viram vínculo na mesma gravação: a pessoa entra também nas empresas que a convidaram
+  ([[MembersSettings]]).
 - **Conta de demonstração:** `admin@zerospend.app`, senha "demonstracao" ([[DadosDeDemonstracao]]).
 
 ## Regras de uso
@@ -57,3 +59,4 @@ Quem está usando o ZeroSpend neste navegador, em qual empresa, e como a senha �
 - [[2026-09-29-pr-017-sessao-e-entrar]] — criada.
 - [[2026-09-29-pr-018-criar-conta]] — `createAccount` e a regra de e-mail corporativo.
 - [[2026-09-29-pr-019-seletor-de-empresa]] — `selectOrganization`, `addOrganization` e a lista de empresas na sessão.
+- [[2026-09-29-pr-037-configuracoes-membros]] — a conta nova aceita os convites pendentes do e-mail.

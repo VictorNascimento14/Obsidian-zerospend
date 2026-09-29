@@ -38,6 +38,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[Notificacoes]] — o sino do header, com o que falta tratar
 - [[OrganizationSettings]] — nome, moeda padrão e cotação da empresa
 - [[AlertSettings]] — antecedência e canais de alerta da empresa
+- [[MembersSettings]] — membros, convites e remoção de acesso
 
 ## Fluxos
 

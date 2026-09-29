@@ -19,12 +19,12 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 
 | Arquivo | O que tem |
 |---|---|
-| `src/lib/domain/types.ts` | `Subscription`, `Organization` (com `defaultCurrency`, `brlPerUsd`, `renewalLeadDays` e `alertChannels`), `AlertChannels`, `AlertDismissal` (empresa, chave do alerta e dia), `IsoDate` e as listas `CURRENCIES`, `BILLING_CYCLES`, `SUBSCRIPTION_STATUSES`, `SUBSCRIPTION_SOURCES` (os tipos derivam delas) |
-| `src/lib/domain/validation.ts` | `validateSubscriptionDraft` (erro por campo, em português), `SubscriptionDraft`, `OWNER_MAX`; `validateOrganizationDraft`, `OrganizationDraft`, `BRL_PER_USD_MAX`; `validateAlertSettings` |
-| `src/lib/domain/text.ts` | `normalizeText` (sem acento, minúsculo) e `toWords` (só letras e números, em palavras) |
+| `src/lib/domain/types.ts` | `Subscription`, `Organization` (com `defaultCurrency`, `brlPerUsd`, `renewalLeadDays` e `alertChannels`), `AlertChannels`, `AlertDismissal`, `Invitation` (convite pendente) (empresa, chave do alerta e dia), `IsoDate` e as listas `CURRENCIES`, `BILLING_CYCLES`, `SUBSCRIPTION_STATUSES`, `SUBSCRIPTION_SOURCES` (os tipos derivam delas) |
+| `src/lib/domain/validation.ts` | `validateSubscriptionDraft` (erro por campo, em português), `SubscriptionDraft`, `OWNER_MAX`; `validateOrganizationDraft`, `OrganizationDraft`, `BRL_PER_USD_MAX`; `validateAlertSettings`; `validateInviteDraft` (mesma regra de e-mail corporativo da conta) |
+| `src/lib/domain/text.ts` | `normalizeText` (sem acento, minúsculo), `toWords` (só letras e números, em palavras) e `normalizeEmail` (minúsculo, sem espaço nas pontas) |
 | `src/lib/domain/categories.ts` | `CATEGORIES` (id → rótulo), `CATEGORY_IDS`, `isCategory` |
 | `src/lib/domain/dates.ts` | `isIsoDate`, `toIsoDate`, `addMonths`, `addDays`, `daysBetween` |
-| `src/lib/domain/format.ts` | `formatMoney`, `formatDate`, `formatDaysUntil`, `plural`, `formatList`, `CURRENCY_LABELS`, `BILLING_CYCLE_LABELS`, `STATUS_LABELS`, `SOURCE_LABELS` |
+| `src/lib/domain/format.ts` | `formatMoney`, `formatDate`, `formatDaysUntil`, `plural`, `formatList`, `initials`, `ROLE_LABELS`, `CURRENCY_LABELS`, `BILLING_CYCLE_LABELS`, `STATUS_LABELS`, `SOURCE_LABELS` |
 | `src/lib/domain/*.test.ts` | os testes (Vitest, fuso de São Paulo) |
 
 ## Comportamento
@@ -64,3 +64,4 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 - [[2026-09-29-pr-033-central-de-alertas]] — `AlertDismissal`.
 - [[2026-09-29-pr-035-configuracoes-empresa]] — `validateOrganizationDraft` e `CURRENCY_LABELS`.
 - [[2026-09-29-pr-036-configuracoes-alertas]] — `renewalLeadDays` e `alertChannels` na empresa.
+- [[2026-09-29-pr-037-configuracoes-membros]] — `Invitation`, `validateInviteDraft`, `ROLE_LABELS`, `initials` e `normalizeEmail`.
