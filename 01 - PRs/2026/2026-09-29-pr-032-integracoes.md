@@ -7,7 +7,7 @@ pr: 32
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/32
 branch: feat/integracoes
 tags: [pr, frontend, integracoes]
-status: aberto
+status: merged
 ---
 
 # PR #32 — feat(integracoes): mostrar a origem das assinaturas e importar pela página
