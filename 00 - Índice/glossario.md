@@ -10,6 +10,7 @@ tags: [glossario]
 |---|---|
 | **Assinatura** | Um software que a empresa paga de forma recorrente (`subscription`). |
 | **Empresa** | A organização dona das assinaturas (`organization`). Uma pessoa pode cuidar de várias. |
+| **Categoria** | O tipo de ferramenta (CRM, Design, Comunicação…), de uma lista fechada — é por ela que a redundância é detectada. |
 | **Ciclo** | De quanto em quanto tempo a cobrança se repete: mensal (`monthly`) ou anual (`annually`). |
 | **Próxima cobrança** | Data da próxima renovação (`next_billing_date`). |
 | **Valor/mês** | O custo mensal equivalente: o valor da cobrança, ou o anual dividido por 12. |

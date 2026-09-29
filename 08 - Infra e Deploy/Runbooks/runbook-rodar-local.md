@@ -20,7 +20,7 @@ Primeira vez numa máquina, ou depois de trocar de branch com `package.json` dif
 3. `npm install`
 4. `npm run dev` — sobe em `http://localhost:3000`.
 
-Checks: `npm run lint && npm run type-check && npm run build` — os mesmos que o CI roda em todo PR
+Checks: `npm run lint && npm run type-check && npm test && npm run build` — os mesmos que o CI roda em todo PR
 ([[runbook-ci]]).
 
 ## Como saber que deu certo
