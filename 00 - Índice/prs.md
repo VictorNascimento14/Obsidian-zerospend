@@ -17,3 +17,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #5 | [[2026-09-29-pr-005-titulos-do-kit]] — fix(tema): pôr os títulos do kit nos tamanhos padrão do Tailwind |
 | #6 | [[2026-09-29-pr-006-primitivos-base]] — ui(primitivos): adicionar Button, Badge, Card, Avatar, Separator e Skeleton |
 | #7 | [[2026-09-29-pr-007-primitivos-formulario]] — ui(primitivos): adicionar Input, Label, Select, Textarea, Switch e Checkbox |
+| #8 | [[2026-09-29-pr-008-primitivos-sobreposicao]] — ui(primitivos): adicionar Dialog, AlertDialog, DropdownMenu, Sheet, Tooltip e toasts |
