@@ -48,3 +48,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #36 | [[2026-09-29-pr-036-configuracoes-alertas]] — feat(configuracoes): antecedência e canais de alerta da empresa |
 | #37 | [[2026-09-29-pr-037-configuracoes-membros]] — feat(configuracoes): membros da empresa e convites |
 | #38 | [[2026-09-29-pr-038-telas-de-sistema]] — feat(casca): telas de página não encontrada, erro e carregamento |
+| #39 | [[2026-09-29-pr-039-metadados]] — chore(metadados): ícone, manifesto e cor do tema |
