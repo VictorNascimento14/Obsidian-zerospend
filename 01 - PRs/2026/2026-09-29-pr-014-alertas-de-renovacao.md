@@ -7,7 +7,7 @@ pr: 14
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/14
 branch: feat/alertas-de-renovacao
 tags: [pr, frontend, dominio, alertas]
-status: aberto
+status: merged
 ---
 
 # PR #14 — feat(dominio): alertas de renovação por antecedência
