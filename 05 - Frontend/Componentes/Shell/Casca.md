@@ -61,5 +61,5 @@ A casca não tem dado próprio: renderiza no servidor, e cada página cuida do s
 
 - [[2026-09-29-pr-016-casca]] — criada: sidebar, header com menu do celular e tema, cinco áreas.
 - [[2026-09-29-pr-017-sessao-e-entrar]] — avatar com "Sair"; a casca passa a exigir sessão.
-- [[2026-09-29-pr-023-nova-assinatura]] — `PageHeader` com ações.
 - [[2026-09-29-pr-019-seletor-de-empresa]] — seletor de empresa e "Nova empresa"; menus de rádio fecham ao escolher.
+- [[2026-09-29-pr-023-nova-assinatura]] — `PageHeader` com ações.
