@@ -38,6 +38,8 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
   - `updateSubscription(id, mudanças)`: valida a mistura com o que já existia;
   - `removeSubscription(id)`: devolve a removida, para o "desfazer";
   - `restoreSubscription(assinatura)`: o "desfazer" — volta com o mesmo id, uma vez só;
+  - `updateOrganization(empresa, rascunho)`: nome, moeda padrão e cotação. Valida e só aceita quem
+    está na sessão e administra a empresa ([[OrganizationSettings]]);
   - `dismissAlert(empresa, chave)` e `restoreAlert(empresa, chave)`: as dispensas de alerta
     (`dismissals`), e dispensar de novo não muda nada ([[AlertsCenter]]).
 
@@ -71,3 +73,4 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - [[2026-09-29-pr-025-excluir-assinatura]] — `restoreSubscription`.
 - [[2026-09-29-pr-030-onboarding-extrato]] — `addSubscriptions` (tudo ou nada).
 - [[2026-09-29-pr-033-central-de-alertas]] — `dismissals`, `dismissAlert` e `restoreAlert`; campo novo com padrão na leitura.
+- [[2026-09-29-pr-035-configuracoes-empresa]] — `updateOrganization`, com a conferência de papel.

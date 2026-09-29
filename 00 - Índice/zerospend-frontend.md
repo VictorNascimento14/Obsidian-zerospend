@@ -36,6 +36,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[EmailConnectCard]] — a conexão com o e-mail da empresa (demonstração)
 - [[AlertsCenter]] — a central de alertas: dispensar, confirmar e descartar
 - [[Notificacoes]] — o sino do header, com o que falta tratar
+- [[OrganizationSettings]] — nome, moeda padrão e cotação da empresa
 
 ## Fluxos
 

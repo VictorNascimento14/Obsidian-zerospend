@@ -44,3 +44,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #32 | [[2026-09-29-pr-032-integracoes]] — feat(integracoes): mostrar a origem das assinaturas e importar pela página |
 | #33 | [[2026-09-29-pr-033-central-de-alertas]] — feat(alertas): central de alertas com dispensar |
 | #34 | [[2026-09-29-pr-034-notificacoes]] — feat(casca): sino de notificações no header |
+| #35 | [[2026-09-29-pr-035-configuracoes-empresa]] — feat(configuracoes): editar nome, moeda padrão e cotação da empresa |

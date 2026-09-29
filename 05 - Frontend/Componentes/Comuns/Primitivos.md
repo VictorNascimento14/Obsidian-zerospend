@@ -40,6 +40,7 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 | `Tooltip` | `TooltipTrigger`, `TooltipContent`, `TooltipProvider` (no layout) | `TooltipContent side` |
 | `Table` | `TableHeader`, `TableBody`, `TableFooter`, `TableRow`, `TableHead`, `TableCell`, `TableCaption` | — (rola na horizontal no celular) |
 | `Command` | `CommandDialog`, `CommandInput`, `CommandList`, `CommandEmpty`, `CommandGroup`, `CommandItem`, `CommandSeparator`, `CommandShortcut` (e o `InputGroup` que o `CommandInput` usa) | `Command filter` (critério de busca) |
+| `Field` | `FieldLabel`, `FieldDescription`, `FieldError` (`role="alert"`), `FieldGroup`, `FieldSet`, `FieldLegend`, `FieldContent`, `FieldTitle`, `FieldSeparator` | `Field orientation`: `vertical`, `horizontal`, `responsive` |
 | `Popover` | `PopoverTrigger`, `PopoverContent`, `PopoverHeader`, `PopoverTitle`, `PopoverDescription` | `PopoverContent align`, `side`, `sideOffset` |
 | `Toaster` (Sonner) | montado no layout; o aviso sai por `toast()` / `toast.success()` de `sonner` | — |
 
@@ -90,3 +91,4 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 - [[2026-09-29-pr-009-tabela]] — `Table`.
 - [[2026-09-29-pr-028-busca-global]] — `Command` (com `cmdk`), sem sobrescrever o `dialog` traduzido.
 - [[2026-09-29-pr-034-notificacoes]] — `Popover` (gerado sem mudança).
+- [[2026-09-29-pr-035-configuracoes-empresa]] — `Field` (gerado sem mudança), nas configurações.
