@@ -7,7 +7,7 @@ pr: 5
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/5
 branch: fix/titulos-do-kit
 tags: [pr, frontend, design-system]
-status: aberto
+status: merged
 ---
 
 # PR #5 — fix(tema): pôr os títulos do kit nos tamanhos padrão do Tailwind
