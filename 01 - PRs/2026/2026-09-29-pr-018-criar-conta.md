@@ -28,7 +28,7 @@ aqui, só a demonstração entrava.
 - `billing.ts`: `DEFAULT_BRL_PER_USD` (5,40), a cotação inicial de uma empresa nova — a demonstração
   passa a usar a mesma constante.
 - `/criar-conta` (`SignUpForm`), com os links cruzados entre "Entrar" e "Criar conta".
-- 9 testes novos (96 no total).
+- 6 testes novos (93 no total).
 
 ## 🕵️ Dado sensível (LGPD e sigilo)
 
@@ -61,7 +61,7 @@ aqui, só a demonstração entrava.
 
 ## 🧪 Como testar
 
-1. `npm test` — 96 testes (validação da conta, `createAccount` e a volta pelo `signIn`).
+1. `npm test` — 93 testes (validação da conta, `createAccount` e a volta pelo `signIn`).
 2. Percorrido num Chromium headless, com o console limpo:
    - "Criar conta" em `/entrar` leva a `/criar-conta`;
    - enviar vazio mostra os quatro erros, cada um no seu campo;
