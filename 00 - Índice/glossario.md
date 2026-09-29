@@ -11,6 +11,7 @@ tags: [glossario]
 | **Assinatura** | Um software que a empresa paga de forma recorrente (`subscription`). |
 | **E-mail corporativo** | E-mail do domínio da empresa. A v1 recusa provedores pessoais (Gmail, Outlook e parecidos). |
 | **Empresa** | A organização dona das assinaturas (`organization`). Uma pessoa pode cuidar de várias e troca pelo seletor do header. |
+| **Catálogo de fornecedores** | A lista local de SaaS conhecidos com que a v1 reconhece assinaturas no extrato — não é IA ([[LeitorDeExtrato]]). |
 | **Categoria** | O tipo de ferramenta (CRM, Design, Comunicação…), de uma lista fechada — é por ela que a redundância é detectada. |
 | **Ciclo** | De quanto em quanto tempo a cobrança se repete: mensal (`monthly`) ou anual (`annually`). |
 | **Próxima cobrança** | Data da próxima renovação (`next_billing_date`). Se a gravada já passou, a tela mostra a próxima a partir de hoje, sem regravar ([[RegrasDeCobranca]]). |

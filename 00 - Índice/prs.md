@@ -38,3 +38,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #26 | [[2026-09-29-pr-026-revisar-deteccao]] — feat(assinaturas): confirmar ou descartar assinatura em revisão |
 | #27 | [[2026-09-29-pr-027-pagina-assinaturas]] — feat(assinaturas): lista completa com busca, filtros e ordenação |
 | #28 | [[2026-09-29-pr-028-busca-global]] — feat(casca): busca global com ⌘K |
+| #29 | [[2026-09-29-pr-029-leitor-de-extrato]] — feat(importacao): leitor de extrato CSV e reconhecimento de fornecedores |

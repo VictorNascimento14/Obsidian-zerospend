@@ -39,7 +39,8 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 - **Ordem:** da próxima cobrança para a mais distante; canceladas no fim, por nome.
 - **Etiquetas:** Ativa em success, Em revisão em warning, Cancelada em cinza, Ferramenta redundante em
   danger — classes literais com o par escuro.
-- **Monograma:** cor pelo nome, entre cerulean, raspberry, plum, success e warning.
+- **Monograma:** a cor do catálogo de fornecedores ([[LeitorDeExtrato]]) quando o fornecedor é
+  conhecido; senão, uma cor estável tirada do nome — entre cerulean, raspberry, plum, success e warning.
 - **Celular:** a tabela rola na horizontal dentro do cartão; a página não.
 
 ## Estados (vazio, carregando, erro)
@@ -60,3 +61,4 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 - [[2026-09-29-pr-025-excluir-assinatura]] — "Excluir" no menu da linha.
 - [[2026-09-29-pr-026-revisar-deteccao]] — confirmar ou descartar na linha em revisão.
 - [[2026-09-29-pr-027-pagina-assinaturas]] — corpo da tabela separado (`SubscriptionRowsTable`); filtrar e ordenar.
+- [[2026-09-29-pr-029-leitor-de-extrato]] — monograma com a cor do catálogo.

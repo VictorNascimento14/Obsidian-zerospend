@@ -45,3 +45,4 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[AlertasDeRenovacao]] — quais assinaturas renovam dentro da antecedência
 - [[Redundancia]] — ferramentas redundantes e economia potencial
 - [[SessaoLocal]] — pessoa, empresas, sessão e senha
+- [[LeitorDeExtrato]] — ler o CSV do cartão e reconhecer os fornecedores
