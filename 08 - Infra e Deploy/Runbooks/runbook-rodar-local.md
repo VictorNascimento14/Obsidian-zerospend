@@ -25,4 +25,6 @@ Checks: `npm run lint && npm run type-check && npm run build` — os mesmos que 
 
 ## Como saber que deu certo
 
-A página abre sem erro no console. Criado em [[2026-09-29-pr-001-scaffolding]].
+A página abre sem erro no console, e o `git status` continua limpo depois do `npm run dev` (o
+`agentRules: false` do `next.config.ts` impede o Next de reescrever o `CLAUDE.md` — ver
+[[2026-09-29-pr-004-next-dev]]). Criado em [[2026-09-29-pr-001-scaffolding]].
