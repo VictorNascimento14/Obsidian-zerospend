@@ -7,7 +7,7 @@ pr: 22
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/22
 branch: feat/painel-de-alertas
 tags: [pr, frontend, dashboard, alertas]
-status: aberto
+status: merged
 ---
 
 # PR #22 — feat(dashboard): painel de alertas e duplicidades
