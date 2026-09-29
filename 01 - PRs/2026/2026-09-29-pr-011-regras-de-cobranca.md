@@ -7,7 +7,7 @@ pr: 11
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/11
 branch: feat/regras-de-cobranca
 tags: [pr, frontend, dominio]
-status: aberto
+status: merged
 ---
 
 # PR #11 — feat(dominio): valor mensal, conversão de moeda e próxima cobrança efetiva
