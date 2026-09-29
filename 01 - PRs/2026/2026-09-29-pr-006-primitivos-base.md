@@ -7,7 +7,7 @@ pr: 6
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/6
 branch: ui/primitivos-base
 tags: [pr, frontend, design-system]
-status: aberto
+status: merged
 ---
 
 # PR #6 — ui(primitivos): adicionar Button, Badge, Card, Avatar, Separator e Skeleton
