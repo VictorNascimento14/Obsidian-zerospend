@@ -7,7 +7,7 @@ pr: 23
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/23
 branch: feat/nova-assinatura
 tags: [pr, frontend, assinaturas]
-status: aberto
+status: merged
 ---
 
 # PR #23 — feat(assinaturas): cadastro manual de assinatura
