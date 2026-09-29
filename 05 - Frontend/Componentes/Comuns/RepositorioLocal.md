@@ -57,7 +57,8 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 
 - **Carregando:** `useDatabase()` é `null` — a tela mostra esqueleto.
 - **Vazio:** não acontece na v1, porque o primeiro acesso semeia a demonstração.
-- **Erro:** armazenamento bloqueado derruba a leitura (a tela de erro é a ordem 36 do plano).
+- **Erro:** armazenamento bloqueado ou cheio derruba a leitura. A tela de erro diz o que fazer
+  (liberar o armazenamento do site, sair da janela anônima, liberar espaço). Ver [[TelasDeSistema]].
 
 ## Regras de uso
 
@@ -81,3 +82,4 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - [[2026-09-29-pr-035-configuracoes-empresa]] — `updateOrganization`, com a conferência de papel.
 - [[2026-09-29-pr-036-configuracoes-alertas]] — `updateAlertSettings`; empresa sem preferências lida com o padrão.
 - [[2026-09-29-pr-037-configuracoes-membros]] — `invitations`, `inviteMember`, `revokeInvitation`, `removeMember`; `addAccount` aceita convites.
+- [[2026-09-29-pr-038-telas-de-sistema]] — a tela de erro do armazenamento.

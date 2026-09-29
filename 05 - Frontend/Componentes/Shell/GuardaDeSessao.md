@@ -31,7 +31,10 @@ O caminho de volta passa por `safeRedirectPath` (`src/components/auth/safe-redir
 ## Estados (vazio, carregando, erro)
 
 - **Carregando:** a moldura vazia (sidebar e header sem conteúdo, dois blocos de esqueleto).
+- **Erro:** a guarda é quem lê o armazenamento. Se o navegador o bloquear, o erro sobe até
+  `app/error.tsx` e aparece sem a casca ([[TelasDeSistema]]).
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-017-sessao-e-entrar]] — criada.
+- [[2026-09-29-pr-038-telas-de-sistema]] — erro da guarda (armazenamento) na tela de erro da raiz.

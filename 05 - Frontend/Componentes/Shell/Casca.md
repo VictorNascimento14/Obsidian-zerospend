@@ -56,7 +56,9 @@ sidebar vira uma folha lateral aberta pelo header.
 
 ## Estados (vazio, carregando, erro)
 
-A casca não tem dado próprio: renderiza no servidor, e cada página cuida do seu estado.
+A casca não tem dado próprio: renderiza no servidor, e cada página cuida do seu estado. Enquanto uma
+página chega, o conteúdo mostra o esqueleto; se a página quebra, o erro ocupa só o conteúdo e a casca
+continua ([[TelasDeSistema]]).
 
 ## Regras de uso
 
@@ -75,3 +77,4 @@ A casca não tem dado próprio: renderiza no servidor, e cada página cuida do s
 - [[2026-09-29-pr-023-nova-assinatura]] — `PageHeader` com ações.
 - [[2026-09-29-pr-028-busca-global]] — busca global ⌘K; o seletor de empresa encolhe no celular.
 - [[2026-09-29-pr-034-notificacoes]] — o sino de notificações.
+- [[2026-09-29-pr-038-telas-de-sistema]] — carregamento e erro dentro da casca.

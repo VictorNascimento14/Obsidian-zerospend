@@ -21,6 +21,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[Entrar]]
 - [[CriarConta]]
 - [[Onboarding]]
+- [[TelasDeSistema]] — 404, erro e carregamento
 
 ## Componentes
 
