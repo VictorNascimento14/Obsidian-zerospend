@@ -7,7 +7,7 @@ pr: 36
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/36
 branch: feat/configuracoes-alertas
 tags: [pr, frontend, configuracoes, alertas, dados]
-status: aberto
+status: merged
 ---
 
 # PR #36 — feat(configuracoes): antecedência e canais de alerta da empresa
