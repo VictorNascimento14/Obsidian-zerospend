@@ -48,3 +48,4 @@ atenção na empresa da sessão.
 - [[2026-09-29-pr-022-painel-de-alertas]] — criado.
 - [[2026-09-29-pr-024-editar-assinatura]] — lado a lado a partir de 1700px (a tabela cresceu).
 - [[2026-09-29-pr-033-central-de-alertas]] — sem os dispensados, com "Ver todos"; texto em `AlertItem`/`describeAlert`.
+- [[2026-09-29-pr-034-notificacoes]] — lê os alertas por `useAlerts()`, o mesmo do sino e da central.

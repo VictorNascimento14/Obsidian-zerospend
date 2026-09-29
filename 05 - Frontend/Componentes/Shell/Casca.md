@@ -25,6 +25,7 @@ sidebar vira uma folha lateral aberta pelo header.
 | `src/components/layout/app-header.tsx` | `AppHeader`: botão do menu do celular (folha lateral) e alternador de tema |
 | `src/components/layout/organization-switcher.tsx` | `OrganizationSwitcher`: a empresa atual e a troca; o diálogo "Nova empresa" |
 | `src/components/layout/global-search.tsx` | `GlobalSearch`: o botão "Buscar… ⌘K" e a paleta (páginas, assinaturas, empresas) |
+| `src/components/layout/notifications-menu.tsx` | `NotificationsMenu`: o sino com o que pede atenção ([[Notificacoes]]) |
 | `src/components/layout/user-menu.tsx` | `UserMenu`: avatar com as iniciais; nome, e-mail e "Sair" |
 | `src/components/layout/theme-toggle.tsx` | `ThemeToggle`: claro, escuro ou sistema |
 | `src/components/layout/brand.tsx` | `Brand`: monograma "Z" na cor primária + "ZeroSpend" |
@@ -49,6 +50,8 @@ sidebar vira uma folha lateral aberta pelo header.
 - **Conta:** o avatar (iniciais) abre nome, e-mail e "Sair". A casca só aparece com sessão
   ([[GuardaDeSessao]]).
 - **Título da aba:** "Página · ZeroSpend" (modelo no layout raiz).
+- **Notificações:** o sino, entre a busca e o tema (também no celular), com o número do que falta
+  tratar e o popover com os alertas. Ver [[Notificacoes]].
 - **Superfícies:** sidebar e header em `card` (brancos no claro); o conteúdo sobre o `background`.
 
 ## Estados (vazio, carregando, erro)
@@ -71,3 +74,4 @@ A casca não tem dado próprio: renderiza no servidor, e cada página cuida do s
 - [[2026-09-29-pr-019-seletor-de-empresa]] — seletor de empresa e "Nova empresa"; menus de rádio fecham ao escolher.
 - [[2026-09-29-pr-023-nova-assinatura]] — `PageHeader` com ações.
 - [[2026-09-29-pr-028-busca-global]] — busca global ⌘K; o seletor de empresa encolhe no celular.
+- [[2026-09-29-pr-034-notificacoes]] — o sino de notificações.

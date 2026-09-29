@@ -20,6 +20,8 @@ A central de alertas da empresa: o que pede atenção, com o jeito de tratar cad
 |---|---|
 | `src/components/alerts/alerts-center.tsx` | `AlertsCenter`: as seções, dispensar e voltar a mostrar |
 | `src/components/alerts/alert-item.tsx` | `AlertItem` (ícone, título, descrição e ação) e `describeAlert` (o texto de um alerta), usados também pelo [[AlertsPanel]] |
+| `src/components/alerts/use-alerts.ts` | `useAlerts()`: alertas abertos, dispensados e em revisão, o mesmo no painel, na central e no sino |
+| `src/components/alerts/alert-actions.ts` | `dismissWithUndo()`: dispensar com "Desfazer" |
 | `src/lib/domain/alerts.ts` | `currentAlerts` e as chaves ([[AlertasDeRenovacao]]) |
 
 ## Comportamento
@@ -55,3 +57,4 @@ A central de alertas da empresa: o que pede atenção, com o jeito de tratar cad
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-033-central-de-alertas]] — criado.
+- [[2026-09-29-pr-034-notificacoes]] — `useAlerts` e `dismissWithUndo` compartilhados com o sino ([[Notificacoes]]).
