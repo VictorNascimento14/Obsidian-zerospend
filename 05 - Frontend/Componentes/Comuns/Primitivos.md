@@ -38,6 +38,7 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 | `DropdownMenu` | `DropdownMenuTrigger`, `DropdownMenuContent`, `DropdownMenuGroup`, `DropdownMenuLabel`, `DropdownMenuItem`, `DropdownMenuSeparator`, `DropdownMenuCheckboxItem`, `DropdownMenuRadioGroup`, `DropdownMenuRadioItem`, `DropdownMenuShortcut`, `DropdownMenuSub…` | `DropdownMenuItem variant`: `default`, `destructive` |
 | `Sheet` | `SheetTrigger`, `SheetContent`, `SheetHeader`, `SheetTitle`, `SheetDescription`, `SheetFooter`, `SheetClose` | `SheetContent side`: `top`, `right`, `bottom`, `left` |
 | `Tooltip` | `TooltipTrigger`, `TooltipContent`, `TooltipProvider` (no layout) | `TooltipContent side` |
+| `Table` | `TableHeader`, `TableBody`, `TableFooter`, `TableRow`, `TableHead`, `TableCell`, `TableCaption` | — (rola na horizontal no celular) |
 | `Toaster` (Sonner) | montado no layout; o aviso sai por `toast()` / `toast.success()` de `sonner` | — |
 
 ## Comportamento
@@ -68,6 +69,7 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 - **`DropdownMenuLabel` só dentro de `DropdownMenuGroup`.** Fora dele, a página inteira quebra com
   `Base UI: MenuGroupContext is missing. Menu group parts must be used within <Menu.Group>`.
 - O título do toast usa o tamanho do Sonner (13px), fora da escala do kit.
+- Na tabela, número e data levam `tabular-nums`, e valor alinha à direita (`text-right`).
 - Status de assinatura não usa as variantes do `Badge` direto: vai por mapa de classes literais com a
   cor do kit (regra do `CLAUDE.md` do repositório). O formato é <A DEFINIR> no PR da tabela.
 
@@ -79,3 +81,4 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
   `Checkbox`.
 - [[2026-09-29-pr-008-primitivos-sobreposicao]] — `Dialog`, `AlertDialog`, `DropdownMenu`, `Sheet`,
   `Tooltip` e toasts; textos de fechar em português.
+- [[2026-09-29-pr-009-tabela]] — `Table`.

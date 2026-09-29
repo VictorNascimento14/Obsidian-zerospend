@@ -18,3 +18,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #6 | [[2026-09-29-pr-006-primitivos-base]] — ui(primitivos): adicionar Button, Badge, Card, Avatar, Separator e Skeleton |
 | #7 | [[2026-09-29-pr-007-primitivos-formulario]] — ui(primitivos): adicionar Input, Label, Select, Textarea, Switch e Checkbox |
 | #8 | [[2026-09-29-pr-008-primitivos-sobreposicao]] — ui(primitivos): adicionar Dialog, AlertDialog, DropdownMenu, Sheet, Tooltip e toasts |
+| #9 | [[2026-09-29-pr-009-tabela]] — ui(primitivos): adicionar Table |
