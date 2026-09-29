@@ -7,7 +7,7 @@ pr: 35
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/35
 branch: feat/configuracoes-empresa
 tags: [pr, frontend, configuracoes, dados]
-status: aberto
+status: merged
 ---
 
 # PR #35 — feat(configuracoes): editar nome, moeda padrão e cotação da empresa
