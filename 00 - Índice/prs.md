@@ -14,3 +14,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #2 | [[2026-09-29-pr-002-ci]] — chore(ci): rodar lint, type-check e build e checar a documentação do PR |
 | #3 | [[2026-09-29-pr-003-tema]] — ui(tema): mapear os tokens do Figma no tema do shadcn |
 | #4 | [[2026-09-29-pr-004-next-dev]] — chore(next): impedir o next dev de reescrever o arquivo de instruções |
+| #5 | [[2026-09-29-pr-005-titulos-do-kit]] — fix(tema): pôr os títulos do kit nos tamanhos padrão do Tailwind |

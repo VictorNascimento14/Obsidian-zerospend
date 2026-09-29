@@ -79,9 +79,10 @@ Fonte **Inter**. Altura de linha do corpo: **145%**.
 | Body 3 | 12px (0,75rem) | 400 | — |
 | Text Link 1/2/3 | 16 / 14 / 12px | 500 (Medium), cor primária | — |
 
-No código: `text-h1`…`text-h4` aplicam tamanho, peso, tracking e altura de linha (1,2 a 1,3 — a
-altura dos títulos não está no kit) numa classe só; o corpo é `text-base`, `text-sm` e `text-xs`, a
-145%.
+No código, os títulos ocupam os tamanhos padrão do Tailwind — H1 `text-5xl`, H2 `text-4xl`, H3
+`text-3xl`, H4 `text-2xl` —, cada um com tamanho, peso, tracking e altura de linha (1,2 a 1,3; a
+altura dos títulos não está no kit). O corpo é `text-base`, `text-sm` e `text-xs`, a 145%. Por que
+nome padrão: [[2026-09-29-pr-005-titulos-do-kit]].
 
 ## Espaçamento, cantos e elevação
 
