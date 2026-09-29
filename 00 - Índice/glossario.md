@@ -22,7 +22,7 @@ tags: [glossario]
 | **Ferramenta redundante** | Assinatura que divide a categoria com outra — ex.: dois CRMs. A cancelada não conta, e "Outros" nunca é redundante ([[Redundancia]]). |
 | **Economia potencial** | Estimativa do que dá para cortar consolidando as redundâncias: em cada grupo, mantém a mais cara e soma o custo mensal das outras. |
 | **Alerta de renovação** | Aviso de que uma assinatura renova dentro da antecedência configurada (7 dias por padrão); a cancelada não avisa ([[AlertasDeRenovacao]]). |
-| **Responsável** | A pessoa da empresa que responde por aquela assinatura. |
+| **Responsável** | A pessoa da empresa que responde por aquela assinatura — texto livre, porque nem sempre ela tem conta no ZeroSpend. |
 | **Conta de demonstração** | `admin@zerospend.app` (senha "demonstracao"): administra as duas empresas fictícias. |
 | **BPO financeiro** | Escritório que terceiriza o financeiro de outras empresas. |
 

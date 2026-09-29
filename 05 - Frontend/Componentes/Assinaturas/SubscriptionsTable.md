@@ -27,12 +27,13 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 
 | Coluna | O que mostra |
 |---|---|
-| Software | monograma ("GW" para Google Workspace) + nome |
+| Software | monograma ("GW" para Google Workspace) + nome; embaixo, "Resp.: …" quando há responsável |
 | Categoria | o rótulo da categoria |
 | Valor/mês | na moeda da empresa ([[RegrasDeCobranca]]); embaixo, o valor original quando é anual ou em outra moeda |
 | Ciclo | Mensal ou Anual |
 | Próxima cobrança | a efetiva, `DD/MM/AAAA`; dentro da janela de alerta, "em N dias" em tom de alerta; cancelada: "—" |
 | Status | a etiqueta do status gravado e, se for o caso, "Ferramenta redundante" ([[Redundancia]]) |
+| (ações) | o menu "⋯" — "Editar" ([[SubscriptionForm]]) |
 
 - **Ordem:** da próxima cobrança para a mais distante; canceladas no fim, por nome.
 - **Etiquetas:** Ativa em success, Em revisão em warning, Cancelada em cinza, Ferramenta redundante em
@@ -47,9 +48,11 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 
 ## Regras de uso
 
-- A coluna "Ações" entra com o primeiro uso (editar, ordem 22), não antes.
+- Ação nova da linha entra no menu "⋯" (`SubscriptionActions`).
+- Coluna nova mexe no ponto de quebra do painel do dashboard ([[AlertsPanel]]): meça a tabela de novo.
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-021-tabela-de-assinaturas]] — criada, no dashboard.
 - [[2026-09-29-pr-023-nova-assinatura]] — o estado vazio aponta para "Nova assinatura".
+- [[2026-09-29-pr-024-editar-assinatura]] — coluna de ações (Editar) e o responsável embaixo do nome.

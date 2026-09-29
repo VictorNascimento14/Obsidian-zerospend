@@ -45,6 +45,8 @@ As datas são **relativas ao dia em que a demonstração é criada** (`inDays` a
 | ChatGPT Team | Outros | US$ 60,00 | Mensal | +10 dias | Em revisão | veio do extrato |
 | Adobe Acrobat Pro | Outros | R$ 85,00 | Mensal | +25 dias | Em revisão | veio do extrato |
 
+Responsáveis: Admin Exemplo (Google Workspace, HubSpot) e Pessoa Exemplo (Figma, Canva).
+
 **Clínica Exemplo** (BRL, cotação R$ 5,40): Google Workspace (R$ 294,00, +14), Canva (R$ 34,90, +20),
 Zoom (R$ 79,90, +2) e Conta Azul (R$ 129,00, +11) — todas mensais e ativas, sem redundância.
 
@@ -63,3 +65,4 @@ das duas empresas ([[SessaoLocal]]).
 - [[2026-09-29-pr-012-sementes]] — criado.
 - [[2026-09-29-pr-017-sessao-e-entrar]] — a conta de demonstração e os vínculos com as duas empresas.
 - [[2026-09-29-pr-014-alertas-de-renovacao]] — ChatGPT Team de +6 para +10 dias: os alertas da demonstração são os três do briefing.
+- [[2026-09-29-pr-024-editar-assinatura]] — responsáveis fictícios em quatro assinaturas.

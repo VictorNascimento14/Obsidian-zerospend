@@ -20,7 +20,7 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 | Arquivo | O que tem |
 |---|---|
 | `src/lib/domain/types.ts` | `Subscription`, `Organization` (com `defaultCurrency` e `brlPerUsd`), `IsoDate` e as listas `CURRENCIES`, `BILLING_CYCLES`, `SUBSCRIPTION_STATUSES`, `SUBSCRIPTION_SOURCES` (os tipos derivam delas) |
-| `src/lib/domain/validation.ts` | `validateSubscriptionDraft` (erro por campo, em português), `SubscriptionDraft` |
+| `src/lib/domain/validation.ts` | `validateSubscriptionDraft` (erro por campo, em português), `SubscriptionDraft`, `OWNER_MAX` |
 | `src/lib/domain/categories.ts` | `CATEGORIES` (id → rótulo), `CATEGORY_IDS`, `isCategory` |
 | `src/lib/domain/dates.ts` | `isIsoDate`, `toIsoDate`, `addMonths`, `addDays`, `daysBetween` |
 | `src/lib/domain/format.ts` | `formatMoney`, `formatDate`, `formatDaysUntil`, `plural`, `formatList`, `BILLING_CYCLE_LABELS`, `STATUS_LABELS`, `SOURCE_LABELS` |
@@ -30,6 +30,7 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 
 - **`amount` é o valor de uma cobrança**, na moeda da assinatura — o valor por mês é regra de
   cobrança, não campo.
+- **Responsável** (`owner`) é texto livre opcional, até 80 caracteres.
 - **Status gravado** é só `active` ("Ativa"), `review_needed` ("Em revisão") ou `cancelled`
   ("Cancelada"). "Ferramenta redundante" e "renova em N dias" são calculados a cada leitura.
 - **Categorias** (lista fechada): Comunicação, Reuniões e vídeo, Produtividade, Design, CRM, Marketing,
@@ -57,3 +58,4 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 - [[2026-09-29-pr-014-alertas-de-renovacao]] — `daysBetween` e `formatDaysUntil`, para os [[AlertasDeRenovacao]].
 - [[2026-09-29-pr-020-dashboard-kpis]] — `plural` (sem `Intl.PluralRules`, que trata o zero como singular).
 - [[2026-09-29-pr-022-painel-de-alertas]] — `formatList` ("Figma, Canva e Miro").
+- [[2026-09-29-pr-024-editar-assinatura]] — `Subscription.owner` (responsável) e `OWNER_MAX`.

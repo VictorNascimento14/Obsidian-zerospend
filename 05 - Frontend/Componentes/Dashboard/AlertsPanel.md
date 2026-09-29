@@ -26,8 +26,8 @@ atenção na empresa da sessão.
   na mesma categoria. Ficar só com HubSpot economiza R$ 534,60 por mês." Ícone de cópia, em tom de
   perigo.
 - **Texto sem artigo antes da marca** ("Zoom renova…"): "do/da" presumiria o gênero de cada uma.
-- **Lugar na página:** ao lado da tabela a partir de 1600px (painel de 22rem); abaixo disso, antes da
-  tabela, em largura cheia.
+- **Lugar na página:** ao lado da tabela a partir de 1700px (painel de 22rem); abaixo disso, antes da
+  tabela, em largura cheia. O ponto de quebra vem da largura medida da tabela (~900px).
 - **Colunas da lista pela largura do painel** (consulta de contêiner): 1 coluna ao lado ou no celular,
   2 a partir de `@lg`, 3 a partir de `@4xl`.
 
@@ -43,3 +43,4 @@ atenção na empresa da sessão.
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-022-painel-de-alertas]] — criado.
+- [[2026-09-29-pr-024-editar-assinatura]] — lado a lado a partir de 1700px (a tabela cresceu).
