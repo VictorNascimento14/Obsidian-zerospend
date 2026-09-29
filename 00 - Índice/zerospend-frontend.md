@@ -13,10 +13,17 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 
 ## Páginas
 
+- [[Dashboard]]
+- [[Assinaturas]]
+- [[Integracoes]]
+- [[Alertas]]
+- [[Configuracoes]]
+
 ## Componentes
 
 - [[Tema]] — tokens do kit, tokens semânticos, Inter e modo escuro
 - [[Primitivos]] — componentes de base do shadcn (`base-nova`) e as regras de uso
+- [[Casca]] — sidebar, header, menu do celular e tema
 
 ## Fluxos
 

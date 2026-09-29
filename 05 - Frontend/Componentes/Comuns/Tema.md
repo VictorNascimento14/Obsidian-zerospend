@@ -37,7 +37,8 @@ apontando para eles, a fonte Inter e o modo escuro. A decisão está na
 - Superfície, texto e borda usam token semântico (`bg-card`, `text-foreground`, `border-border`). Cor
   crua do kit fica para estado, sempre com o par `dark:`.
 - `ghost` sobre o fundo da página não mostra hover (no claro, `muted` e `background` são o mesmo
-  `grey-50`): em cima do fundo, use `outline`; `ghost` vive em superfície branca (cartão, menu).
+  `grey-50`): em cima do fundo, use `outline`; `ghost` vive em superfície branca (cartão, menu, sidebar
+  e header da [[Casca]]).
 - Token novo em família de valores fixos (tamanho de fonte, sombra, canto) usa um nome padrão do
   Tailwind: o `cn` dos primitivos não conhece nome inventado (ver [[2026-09-29-pr-005-titulos-do-kit]]).
 - Classe `font-*` explícita vence o peso do título: H4 dentro de `CardTitle` pede `font-bold`.
