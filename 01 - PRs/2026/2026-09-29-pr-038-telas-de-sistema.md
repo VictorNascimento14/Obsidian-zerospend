@@ -7,7 +7,7 @@ pr: 38
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/38
 branch: feat/telas-de-sistema
 tags: [pr, frontend, casca]
-status: aberto
+status: merged
 ---
 
 # PR #38 — feat(casca): telas de página não encontrada, erro e carregamento
