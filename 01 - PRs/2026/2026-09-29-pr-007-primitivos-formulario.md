@@ -7,7 +7,7 @@ pr: 7
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/7
 branch: ui/primitivos-formulario
 tags: [pr, frontend, design-system]
-status: aberto
+status: merged
 ---
 
 # PR #7 — ui(primitivos): adicionar Input, Label, Select, Textarea, Switch e Checkbox
