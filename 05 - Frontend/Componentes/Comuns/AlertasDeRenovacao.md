@@ -16,7 +16,8 @@ renovações urgentes, o painel de alertas do dashboard e a central de alertas.
 
 ## Onde está no código
 
-`src/lib/domain/alerts.ts` — `renewalAlerts`, `RenewalAlert`, `DEFAULT_RENEWAL_LEAD_DAYS`. A frase
+`src/lib/domain/alerts.ts` — `renewalAlerts`, `RenewalAlert`, `DEFAULT_RENEWAL_LEAD_DAYS`, e
+`currentAlerts` com o tipo `Alert` (todos os alertas da empresa, com chave). A frase
 da distância é `formatDaysUntil` (`format.ts`). Testes em `alerts.test.ts`.
 
 ## Comportamento
@@ -32,12 +33,23 @@ da distância é `formatDaysUntil` (`format.ts`). Testes em `alerts.test.ts`.
 Na demonstração da Exemplo Tecnologia, com a antecedência padrão: GitHub (em 2 dias), Google
 Workspace (em 3) e Zoom (em 5).
 
+**Todos os alertas da empresa** (`currentAlerts`): as renovações e depois as duplicidades
+([[Redundancia]]), cada uma com uma **chave de situação**:
+
+- renovação: `renovacao:<id da assinatura>:<data da cobrança>`, e a cobrança seguinte é outra
+  situação;
+- duplicidade: `redundancia:<categoria>:<ids do grupo, ordenados>`, e o grupo mudar é outra situação.
+
+A chave é o que a dispensa grava ([[AlertsCenter]]): o alerta dispensado volta quando a situação
+muda.
+
 ## Regras de uso
 
 - `today` vem da tela (`toIsoDate(new Date())`).
 - Nenhuma tela promete aviso por e-mail ou WhatsApp: a v1 não envia nada.
-- Dispensar um alerta (central de alertas, ordem 31) é outra regra, sobre esta lista.
+- Dispensar não mexe nesta regra: a tela filtra `currentAlerts` pelas chaves dispensadas da empresa.
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-014-alertas-de-renovacao]] — criado.
+- [[2026-09-29-pr-033-central-de-alertas]] — `currentAlerts`, com as chaves de situação.

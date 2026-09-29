@@ -16,7 +16,8 @@ atenção na empresa da sessão.
 
 ## Onde está no código
 
-`src/components/dashboard/alerts-panel.tsx` (`AlertsPanel`), no `/dashboard`.
+`src/components/dashboard/alerts-panel.tsx` (`AlertsPanel`), no `/dashboard`. Cada alerta é um
+`AlertItem`, com o texto de `describeAlert` ([[AlertsCenter]]).
 
 ## Comportamento
 
@@ -26,6 +27,8 @@ atenção na empresa da sessão.
   na mesma categoria. Ficar só com HubSpot economiza R$ 534,60 por mês." Ícone de cópia, em tom de
   perigo.
 - **Texto sem artigo antes da marca** ("Zoom renova…"): "do/da" presumiria o gênero de cada uma.
+- **Só o que não foi dispensado.** Dispensar é na central de alertas, e o link "Ver todos" (nome
+  acessível "Ver todos os alertas") leva até ela.
 - **Lugar na página:** ao lado da tabela a partir de 1700px (painel de 22rem); abaixo disso, antes da
   tabela, em largura cheia. O ponto de quebra vem da largura medida da tabela (~900px).
 - **Colunas da lista pela largura do painel** (consulta de contêiner): 1 coluna ao lado ou no celular,
@@ -38,9 +41,10 @@ atenção na empresa da sessão.
 ## Regras de uso
 
 - Recomendação nova (em revisão, inatividade) entra aqui só se o briefing ou a especificação pedirem;
-  a lista completa é a central de alertas (ordem 31).
+  a lista completa é a central de alertas ([[AlertsCenter]]).
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-022-painel-de-alertas]] — criado.
 - [[2026-09-29-pr-024-editar-assinatura]] — lado a lado a partir de 1700px (a tabela cresceu).
+- [[2026-09-29-pr-033-central-de-alertas]] — sem os dispensados, com "Ver todos"; texto em `AlertItem`/`describeAlert`.

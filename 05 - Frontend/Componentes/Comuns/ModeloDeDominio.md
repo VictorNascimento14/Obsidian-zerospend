@@ -19,7 +19,7 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 
 | Arquivo | O que tem |
 |---|---|
-| `src/lib/domain/types.ts` | `Subscription`, `Organization` (com `defaultCurrency` e `brlPerUsd`), `IsoDate` e as listas `CURRENCIES`, `BILLING_CYCLES`, `SUBSCRIPTION_STATUSES`, `SUBSCRIPTION_SOURCES` (os tipos derivam delas) |
+| `src/lib/domain/types.ts` | `Subscription`, `Organization` (com `defaultCurrency` e `brlPerUsd`), `AlertDismissal` (empresa, chave do alerta e dia), `IsoDate` e as listas `CURRENCIES`, `BILLING_CYCLES`, `SUBSCRIPTION_STATUSES`, `SUBSCRIPTION_SOURCES` (os tipos derivam delas) |
 | `src/lib/domain/validation.ts` | `validateSubscriptionDraft` (erro por campo, em português), `SubscriptionDraft`, `OWNER_MAX` |
 | `src/lib/domain/text.ts` | `normalizeText` (sem acento, minúsculo) e `toWords` (só letras e números, em palavras) |
 | `src/lib/domain/categories.ts` | `CATEGORIES` (id → rótulo), `CATEGORY_IDS`, `isCategory` |
@@ -61,3 +61,4 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 - [[2026-09-29-pr-022-painel-de-alertas]] — `formatList` ("Figma, Canva e Miro").
 - [[2026-09-29-pr-024-editar-assinatura]] — `Subscription.owner` (responsável) e `OWNER_MAX`.
 - [[2026-09-29-pr-029-leitor-de-extrato]] — `text.ts` (normalização para busca e importação).
+- [[2026-09-29-pr-033-central-de-alertas]] — `AlertDismissal`.

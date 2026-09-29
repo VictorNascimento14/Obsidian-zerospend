@@ -34,6 +34,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[SubscriptionForm]] — cadastro manual e os campos de assinatura
 - [[StatementImport]] — subir o extrato do cartão, revisar e importar
 - [[EmailConnectCard]] — a conexão com o e-mail da empresa (demonstração)
+- [[AlertsCenter]] — a central de alertas: dispensar, confirmar e descartar
 
 ## Fluxos
 

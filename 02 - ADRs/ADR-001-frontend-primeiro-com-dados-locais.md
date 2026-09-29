@@ -42,6 +42,14 @@ trocar de empresa, importar um extrato, editar e excluir assinatura, dispensar a
   cookie de sessão.
 - ⚠️ Dado de um navegador não aparece em outro.
 
+## Atualizações
+
+- **2026-09-29, [[2026-09-29-pr-033-central-de-alertas]]:** a chave versionada da decisão 2 muda só
+  quando o formato **quebra a leitura antiga** (campo renomeado, tipo trocado, estrutura removida), e
+  nesse caso com migração. **Campo novo, com padrão na leitura, entra na mesma chave**, como coluna nova
+  com valor padrão no banco. Trocar a chave sem migrar ressemearia a demonstração por cima das contas e
+  assinaturas de quem já usa o app. O primeiro caso foi `dismissals` (as dispensas de alerta).
+
 ## Implementado em
 
 - [[2026-09-29-pr-010-dominio]] — tipos do domínio, categorias, datas sem hora, formatação e Vitest no CI.

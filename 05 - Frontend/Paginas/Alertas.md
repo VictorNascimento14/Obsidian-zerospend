@@ -11,16 +11,21 @@ tags: [funcionalidade, pagina]
 
 ## O que é
 
-A área `/alertas` da [[Casca]]. Descrição na tela: "Renovações próximas, ferramentas redundantes e itens em revisão."
+A área `/alertas` da [[Casca]]: a central de alertas da empresa. Descrição na tela: "Renovações dentro
+da antecedência, ferramentas redundantes e assinaturas em revisão."
 
 ## Onde está no código
 
-`src/app/(app)/alertas/page.tsx` — Server Component com os metadados ("Alertas · ZeroSpend").
+`src/app/(app)/alertas/page.tsx`, Server Component com os metadados ("Alertas · ZeroSpend"), e
+[[AlertsCenter]].
 
 ## Comportamento
 
-Por enquanto, só o `PageHeader`. O conteúdo chega em: A central de alertas com dispensar (ordem 31).
+Renovações e duplicidades com "Dispensar", assinaturas em revisão com "Confirmar" e "Descartar", e os
+dispensados com "Voltar a mostrar". Ver [[AlertsCenter]]. Chega-se aqui pela sidebar e pelo "Ver
+todos" do [[AlertsPanel]].
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-016-casca]] — criada, com título e descrição.
+- [[2026-09-29-pr-033-central-de-alertas]] — a central de alertas.

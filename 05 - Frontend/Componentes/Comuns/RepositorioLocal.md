@@ -37,7 +37,9 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
     vez, então ou entram todas ou nenhuma (`addSubscription` é o caso de uma só);
   - `updateSubscription(id, mudanças)`: valida a mistura com o que já existia;
   - `removeSubscription(id)`: devolve a removida, para o "desfazer";
-  - `restoreSubscription(assinatura)`: o "desfazer" — volta com o mesmo id, uma vez só.
+  - `restoreSubscription(assinatura)`: o "desfazer" — volta com o mesmo id, uma vez só;
+  - `dismissAlert(empresa, chave)` e `restoreAlert(empresa, chave)`: as dispensas de alerta
+    (`dismissals`), e dispensar de novo não muda nada ([[AlertsCenter]]).
 
   Toda escrita valida, grava só os campos do modelo e avisa quem assina. Erro de campo sobe como
   `ValidationError` (com `fields`), e o armazenamento cheio sobe como a exceção do navegador — nos
@@ -55,8 +57,12 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 
 - Tela **nunca** toca `localStorage`: lê por `useDatabase()` e escreve por `getRepository()`.
 - A validação da tela é conforto; a do repositório é a regra.
-- Mudou o formato gravado? Chave nova (`zerospend:v2`) e migração da antiga — nunca reaproveitar a
-  chave com formato diferente.
+- **Campo novo, com padrão na leitura, entra na mesma chave**, como coluna nova com valor padrão no
+  banco: o `parse` completa o que falta (`dismissals` ausente vira `[]`), e o que já estava gravado
+  continua valendo. Há teste para isso.
+- **Mudança que quebra a leitura antiga** (renomear, trocar tipo, remover) pede chave nova e
+  **migração**, nunca ressemear por cima de dado de alguém. Ver
+  [[ADR-001-frontend-primeiro-com-dados-locais]] (Atualizações).
 
 ## Histórico de mudanças
 
@@ -64,3 +70,4 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - [[2026-09-29-pr-017-sessao-e-entrar]] — versão 2: usuários, vínculos e sessão (`startSession`, `endSession`).
 - [[2026-09-29-pr-025-excluir-assinatura]] — `restoreSubscription`.
 - [[2026-09-29-pr-030-onboarding-extrato]] — `addSubscriptions` (tudo ou nada).
+- [[2026-09-29-pr-033-central-de-alertas]] — `dismissals`, `dismissAlert` e `restoreAlert`; campo novo com padrão na leitura.
