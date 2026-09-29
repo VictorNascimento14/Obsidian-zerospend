@@ -7,7 +7,7 @@ pr: 28
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/28
 branch: feat/busca-global
 tags: [pr, frontend, casca, busca]
-status: aberto
+status: merged
 ---
 
 # PR #28 — feat(casca): busca global com ⌘K
