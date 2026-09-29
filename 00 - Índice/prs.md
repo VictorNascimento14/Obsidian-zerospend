@@ -28,3 +28,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #16 | [[2026-09-29-pr-016-casca]] — ui(casca): sidebar, header e as páginas da navegação |
 | #17 | [[2026-09-29-pr-017-sessao-e-entrar]] — feat(sessao): sessão local, guarda de rota e tela de entrar |
 | #18 | [[2026-09-29-pr-018-criar-conta]] — feat(sessao): criar conta com e-mail corporativo e empresa |
+| #19 | [[2026-09-29-pr-019-seletor-de-empresa]] — feat(sessao): trocar de empresa no header e criar empresa nova |

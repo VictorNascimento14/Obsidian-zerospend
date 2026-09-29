@@ -32,8 +32,11 @@ Quem está usando o ZeroSpend neste navegador, em qual empresa, e como a senha �
   pessoa pode ter várias empresas.
 - **Sessão:** `{ userId, organizationId }` gravada no banco local. `startSession` abre na primeira
   empresa da pessoa (sem empresa, recusa); `endSession` apaga.
-- **`currentSession`:** resolve pessoa, empresa e papel — `null` se a sessão aponta para algo que não
-  existe mais.
+- **`currentSession`:** resolve pessoa, empresa, papel e a lista de empresas da pessoa (em ordem
+  alfabética) — `null` se a sessão aponta para algo que não existe mais.
+- **Trocar de empresa:** `selectOrganization(id)` só aceita empresa em que a pessoa tem vínculo.
+- **Empresa nova:** `addOrganization(nome)` cria em real, com a cotação inicial, dá o vínculo de
+  administração e passa a sessão para ela.
 - **Entrar:** `signIn` normaliza o e-mail (minúsculo, sem espaço nas pontas), recalcula o hash com o
   sal da pessoa e compara. E-mail desconhecido e senha errada dão a mesma mensagem: "E-mail ou senha
   incorretos."
@@ -53,3 +56,4 @@ Quem está usando o ZeroSpend neste navegador, em qual empresa, e como a senha �
 
 - [[2026-09-29-pr-017-sessao-e-entrar]] — criada.
 - [[2026-09-29-pr-018-criar-conta]] — `createAccount` e a regra de e-mail corporativo.
+- [[2026-09-29-pr-019-seletor-de-empresa]] — `selectOrganization`, `addOrganization` e a lista de empresas na sessão.
