@@ -7,7 +7,7 @@ pr: 27
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/27
 branch: feat/pagina-assinaturas
 tags: [pr, frontend, assinaturas]
-status: aberto
+status: merged
 ---
 
 # PR #27 — feat(assinaturas): lista completa com busca, filtros e ordenação
