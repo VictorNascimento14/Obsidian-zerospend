@@ -7,7 +7,7 @@ pr: 37
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/37
 branch: feat/configuracoes-membros
 tags: [pr, frontend, configuracoes, sessao, dados]
-status: aberto
+status: merged
 ---
 
 # PR #37 — feat(configuracoes): membros da empresa e convites
