@@ -18,8 +18,9 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 
 | Arquivo | O que tem |
 |---|---|
-| `src/components/subscriptions/subscriptions-table.tsx` | `SubscriptionsTable` |
-| `src/components/subscriptions/rows.ts` | `buildRows(assinaturas, empresa, hoje)` — valor por mês, próxima cobrança, dias até ela, redundância, ordem (testes em `rows.test.ts`) |
+| `src/components/subscriptions/subscriptions-table.tsx` | `SubscriptionsTable` (o cartão do dashboard) |
+| `src/components/subscriptions/subscription-rows-table.tsx` | `SubscriptionRowsTable` — o corpo da tabela, usado no dashboard e em [[Assinaturas]] |
+| `src/components/subscriptions/rows.ts` | `buildRows(assinaturas, empresa, hoje)` — valor por mês, próxima cobrança, dias até ela, redundância, ordem; `filterRows` e `sortRows` (testes em `rows.test.ts`) |
 | `src/components/subscriptions/status-badge.tsx` | `StatusBadge` (Ativa, Em revisão, Cancelada) e `RedundantBadge` ("Ferramenta redundante") |
 | `src/components/subscriptions/vendor-avatar.tsx` | `VendorAvatar` — monograma na cor do kit |
 
@@ -58,3 +59,4 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 - [[2026-09-29-pr-024-editar-assinatura]] — coluna de ações (Editar) e o responsável embaixo do nome.
 - [[2026-09-29-pr-025-excluir-assinatura]] — "Excluir" no menu da linha.
 - [[2026-09-29-pr-026-revisar-deteccao]] — confirmar ou descartar na linha em revisão.
+- [[2026-09-29-pr-027-pagina-assinaturas]] — corpo da tabela separado (`SubscriptionRowsTable`); filtrar e ordenar.
