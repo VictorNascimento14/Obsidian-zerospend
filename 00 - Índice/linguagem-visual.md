@@ -61,6 +61,10 @@ Pares de badge *outline* (texto sobre o tint 50 da mesma família): `cerulean-sh
 `success-shade-200` 5,33 · `warning-shade-300` 5,75 · `danger-shade-100` 4,57 · `plum-shade-100` 7,22 ·
 `raspberry-shade-100` 5,37. `grey-500` sobre o fundo `grey-50` dá 4,56 — passa, sem folga.
 
+Etiqueta no escuro: texto `tint-200` sobre o `shade-300` da família **a 40%** em cima do cartão — Ativa
+7,97 · Em revisão 6,97 · Cancelada (`grey-300` sobre `grey-700` a 40%) 5,52 · Ferramenta redundante
+(`danger-tint-100`) 8,57. Com o `shade-300` cheio, o alerta (warning) dá 4,12 e reprova.
+
 No escuro (sobre `grey-800` `#292831`): `grey-300` 6,19 · `cerulean-tint-200` 6,76 (o `tint-300` dá 4,39
 e reprova) · `success-tint-200` 8,90 · `warning-tint-200` 9,33 · `danger-tint-200` 6,38.
 

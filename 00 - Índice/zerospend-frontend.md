@@ -28,6 +28,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[Casca]] — sidebar, header, menu do celular e tema
 - [[GuardaDeSessao]] — a casca só aparece com sessão
 - [[KpiCards]] — os quatro indicadores do dashboard
+- [[SubscriptionsTable]] — a tabela de assinaturas, com status e redundância
 
 ## Fluxos
 

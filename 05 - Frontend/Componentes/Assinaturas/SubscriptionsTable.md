@@ -1,0 +1,53 @@
+---
+tipo: funcionalidade
+camada: frontend
+area: Assinaturas
+rota: /dashboard
+ultima_atualizacao: 2026-09-29
+tags: [funcionalidade, assinaturas, dashboard]
+---
+
+# Tabela de assinaturas
+
+## O que é
+
+A `SubscriptionsTable` do briefing: todas as assinaturas da empresa da sessão, com o que cada uma
+custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboard]].
+
+## Onde está no código
+
+| Arquivo | O que tem |
+|---|---|
+| `src/components/subscriptions/subscriptions-table.tsx` | `SubscriptionsTable` |
+| `src/components/subscriptions/rows.ts` | `buildRows(assinaturas, empresa, hoje)` — valor por mês, próxima cobrança, dias até ela, redundância, ordem (testes em `rows.test.ts`) |
+| `src/components/subscriptions/status-badge.tsx` | `StatusBadge` (Ativa, Em revisão, Cancelada) e `RedundantBadge` ("Ferramenta redundante") |
+| `src/components/subscriptions/vendor-avatar.tsx` | `VendorAvatar` — monograma na cor do kit |
+
+## Comportamento
+
+| Coluna | O que mostra |
+|---|---|
+| Software | monograma ("GW" para Google Workspace) + nome |
+| Categoria | o rótulo da categoria |
+| Valor/mês | na moeda da empresa ([[RegrasDeCobranca]]); embaixo, o valor original quando é anual ou em outra moeda |
+| Ciclo | Mensal ou Anual |
+| Próxima cobrança | a efetiva, `DD/MM/AAAA`; dentro da janela de alerta, "em N dias" em tom de alerta; cancelada: "—" |
+| Status | a etiqueta do status gravado e, se for o caso, "Ferramenta redundante" ([[Redundancia]]) |
+
+- **Ordem:** da próxima cobrança para a mais distante; canceladas no fim, por nome.
+- **Etiquetas:** Ativa em success, Em revisão em warning, Cancelada em cinza, Ferramenta redundante em
+  danger — classes literais com o par escuro.
+- **Monograma:** cor pelo nome, entre cerulean, raspberry, plum, success e warning.
+- **Celular:** a tabela rola na horizontal dentro do cartão; a página não.
+
+## Estados (vazio, carregando, erro)
+
+- **Vazio:** "Nenhuma assinatura cadastrada nesta empresa." (a tabela não aparece).
+
+## Regras de uso
+
+- A coluna "Ações" entra com o primeiro uso (editar, ordem 22), não antes.
+
+## Histórico de mudanças
+
+- [[2026-09-29-pr-021-tabela-de-assinaturas]] — criada, no dashboard.
