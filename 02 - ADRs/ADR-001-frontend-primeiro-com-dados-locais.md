@@ -60,4 +60,21 @@ trocar de empresa, importar um extrato, editar e excluir assinatura, dispensar a
 - [[2026-09-29-pr-017-sessao-e-entrar]] — sessão local e guarda de rota. A senha fica no navegador como
   PBKDF2 com sal (não em texto) — mais cuidado que o mínimo desta ADR, sem virar segurança.
 
-TODO: acrescentar os PRs das regras, do repositório local e da sessão conforme forem mergeados.
+- [[2026-09-29-pr-012-sementes]] — os dados de demonstração, semeados no navegador vazio.
+- [[2026-09-29-pr-018-criar-conta]] — conta local com e-mail corporativo.
+- [[2026-09-29-pr-019-seletor-de-empresa]] — uma pessoa em várias empresas (`memberships`).
+- [[2026-09-29-pr-023-nova-assinatura]], [[2026-09-29-pr-024-editar-assinatura]],
+  [[2026-09-29-pr-025-excluir-assinatura]] e [[2026-09-29-pr-026-revisar-deteccao]] — escrita pelo
+  repositório, com a validação da regra.
+- [[2026-09-29-pr-029-leitor-de-extrato]] e [[2026-09-29-pr-030-onboarding-extrato]] — o CSV lido de
+  verdade no navegador; o PDF rotulado como demonstração (decisão 6).
+- [[2026-09-29-pr-031-onboarding-email]] — a conexão de e-mail simulada e rotulada como demonstração
+  (decisão 6).
+- [[2026-09-29-pr-032-integracoes]] — a origem das assinaturas derivada, sem tabela fora do modelo
+  (decisão 3).
+- [[2026-09-29-pr-033-central-de-alertas]] — as dispensas de alerta, primeiro campo aditivo com padrão
+  na leitura (Atualizações).
+- [[2026-09-29-pr-035-configuracoes-empresa]], [[2026-09-29-pr-036-configuracoes-alertas]] e
+  [[2026-09-29-pr-037-configuracoes-membros]] — a regra de papel conferida no repositório; preferências e
+  convites como campos aditivos.
+- [[2026-09-29-pr-038-telas-de-sistema]] — a tela de erro do armazenamento bloqueado.

@@ -49,3 +49,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #37 | [[2026-09-29-pr-037-configuracoes-membros]] — feat(configuracoes): membros da empresa e convites |
 | #38 | [[2026-09-29-pr-038-telas-de-sistema]] — feat(casca): telas de página não encontrada, erro e carregamento |
 | #39 | [[2026-09-29-pr-039-metadados]] — chore(metadados): ícone, manifesto e cor do tema |
+| #40 | [[2026-09-29-pr-040-readme]] — docs(readme): como rodar, conta de demonstração e mapa do app |

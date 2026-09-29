@@ -67,4 +67,10 @@ famílias de sucesso, alerta e perigo com tints e shades. O arquivo foi lido pel
 - [[2026-09-29-pr-005-titulos-do-kit]] — títulos H1–H4 nos tamanhos padrão do Tailwind.
 - [[2026-09-29-pr-006-primitivos-base]] — primeiros primitivos; `Card` com a sombra Small do kit.
 
-TODO: acrescentar os PRs dos primitivos conforme forem mergeados.
+- [[2026-09-29-pr-007-primitivos-formulario]] — os primitivos de formulário.
+- [[2026-09-29-pr-008-primitivos-sobreposicao]] — diálogo, alerta, menu, folha, dica e avisos; "Close"
+  traduzido para "Fechar".
+- [[2026-09-29-pr-009-tabela]] — a tabela.
+- [[2026-09-29-pr-028-busca-global]] — `Command` e `InputGroup`, sem sobrescrever o `Dialog` alterado.
+- [[2026-09-29-pr-034-notificacoes]] — `Popover`.
+- [[2026-09-29-pr-035-configuracoes-empresa]] — `Field`, usado pelas três seções de configurações.
