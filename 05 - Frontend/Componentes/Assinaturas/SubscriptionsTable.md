@@ -45,8 +45,10 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 
 ## Estados (vazio, carregando, erro)
 
-- **Vazio:** "Nenhuma assinatura cadastrada nesta empresa. Use “Nova assinatura” para cadastrar a
-  primeira." (a tabela não aparece; o botão está no topo da página — [[SubscriptionForm]]).
+- **Vazio** (`NoSubscriptionsYet`, o mesmo da lista em [[Assinaturas]]): "Nenhuma assinatura cadastrada
+  nesta empresa. Importe do extrato do cartão ou use “Nova assinatura”." O texto vem com o link
+  "Importar do extrato" para o [[Onboarding]], e a tabela não aparece. O botão "Nova assinatura" está
+  no topo da página ([[SubscriptionForm]]).
 
 ## Regras de uso
 
@@ -62,3 +64,4 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 - [[2026-09-29-pr-026-revisar-deteccao]] — confirmar ou descartar na linha em revisão.
 - [[2026-09-29-pr-027-pagina-assinaturas]] — corpo da tabela separado (`SubscriptionRowsTable`); filtrar e ordenar.
 - [[2026-09-29-pr-029-leitor-de-extrato]] — monograma com a cor do catálogo.
+- [[2026-09-29-pr-030-onboarding-extrato]] — o vazio aponta para o [[Onboarding]] ("Importar do extrato").

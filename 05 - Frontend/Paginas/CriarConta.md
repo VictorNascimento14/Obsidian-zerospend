@@ -31,7 +31,7 @@ entra nela, com acesso de administração.
   - "A senha precisa de pelo menos 8 caracteres.";
   - "Informe o nome da empresa."
 - **Deu certo:** a pessoa entra na empresa nova (em real, cotação inicial R$ 5,40) e vai para o
-  dashboard.
+  [[Onboarding]], para trazer as assinaturas do extrato.
 - **Links:** "Já tem conta? Entrar" aqui, e "Não tem conta? Criar conta" em [[Entrar]].
 - **Aviso:** a conta fica guardada só neste navegador.
 
@@ -43,3 +43,4 @@ entra nela, com acesso de administração.
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-018-criar-conta]] — criada.
+- [[2026-09-29-pr-030-onboarding-extrato]] — depois de criar a conta, vai para o [[Onboarding]].

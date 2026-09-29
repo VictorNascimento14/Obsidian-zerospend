@@ -20,6 +20,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[Configuracoes]]
 - [[Entrar]]
 - [[CriarConta]]
+- [[Onboarding]]
 
 ## Componentes
 
@@ -31,6 +32,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[SubscriptionsTable]] — a tabela de assinaturas, com status e redundância
 - [[AlertsPanel]] — renovações e duplicidades no dashboard
 - [[SubscriptionForm]] — cadastro manual e os campos de assinatura
+- [[StatementImport]] — subir o extrato do cartão, revisar e importar
 
 ## Fluxos
 

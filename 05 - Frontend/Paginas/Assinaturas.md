@@ -33,7 +33,8 @@ A área `/assinaturas` da [[Casca]]. Descrição na tela: "Todas as assinaturas 
 ## Estados (vazio, carregando, erro)
 
 - **Filtro sem resultado:** "Nenhuma assinatura com esses filtros." com "Limpar filtros".
-- **Empresa sem assinaturas:** "Nenhuma assinatura cadastrada nesta empresa. Use “Nova assinatura”…".
+- **Empresa sem assinaturas:** "Nenhuma assinatura cadastrada nesta empresa. Importe do extrato do cartão
+  ou use “Nova assinatura”.", com o link "Importar do extrato" para o [[Onboarding]].
 
 ## Histórico de mudanças
 
@@ -41,3 +42,4 @@ A área `/assinaturas` da [[Casca]]. Descrição na tela: "Todas as assinaturas 
 - [[2026-09-29-pr-023-nova-assinatura]] — botão "Nova assinatura" no topo ([[SubscriptionForm]]).
 - [[2026-09-29-pr-027-pagina-assinaturas]] — lista completa com busca, filtros e ordenação.
 - [[2026-09-29-pr-028-busca-global]] — lê o `?busca=` da busca global.
+- [[2026-09-29-pr-030-onboarding-extrato]] — o vazio aponta para o [[Onboarding]].

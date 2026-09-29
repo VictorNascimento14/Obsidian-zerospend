@@ -20,8 +20,10 @@ A área `/dashboard` da [[Casca]]. Descrição na tela: "Gasto mensal, economia 
 ## Comportamento
 
 `PageHeader`, os quatro [[KpiCards]], a [[SubscriptionsTable]] e o [[AlertsPanel]] — tudo o que o
-briefing lista. A partir de 1600px, tabela e painel ficam lado a lado; abaixo disso, o painel vem antes
+briefing lista. A partir de 1700px, tabela e painel ficam lado a lado; abaixo disso, o painel vem antes
 da tabela.
+
+Sem assinaturas, a tabela dá lugar ao link "Importar do extrato", que leva ao [[Onboarding]].
 
 ## Histórico de mudanças
 
@@ -30,3 +32,5 @@ da tabela.
 - [[2026-09-29-pr-021-tabela-de-assinaturas]] — a tabela de assinaturas.
 - [[2026-09-29-pr-022-painel-de-alertas]] — o painel de alertas e duplicidades.
 - [[2026-09-29-pr-023-nova-assinatura]] — botão "Nova assinatura" no topo ([[SubscriptionForm]]).
+- [[2026-09-29-pr-024-editar-assinatura]] — tabela e painel lado a lado a partir de 1700px (a tabela cresceu).
+- [[2026-09-29-pr-030-onboarding-extrato]] — o vazio aponta para o [[Onboarding]]; a nota passa a dizer 1700px, o valor do PR #24.

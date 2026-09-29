@@ -33,6 +33,8 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
   demonstração é semeada de novo.
 - **Escrita:**
   - `addSubscription(empresa, rascunho)`: exige empresa existente;
+  - `addSubscriptions(empresa, rascunhos)`: a importação do extrato. Valida todas antes e grava de uma
+    vez, então ou entram todas ou nenhuma (`addSubscription` é o caso de uma só);
   - `updateSubscription(id, mudanças)`: valida a mistura com o que já existia;
   - `removeSubscription(id)`: devolve a removida, para o "desfazer";
   - `restoreSubscription(assinatura)`: o "desfazer" — volta com o mesmo id, uma vez só.
@@ -61,3 +63,4 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - [[2026-09-29-pr-013-repositorio-local]] — criado.
 - [[2026-09-29-pr-017-sessao-e-entrar]] — versão 2: usuários, vínculos e sessão (`startSession`, `endSession`).
 - [[2026-09-29-pr-025-excluir-assinatura]] — `restoreSubscription`.
+- [[2026-09-29-pr-030-onboarding-extrato]] — `addSubscriptions` (tudo ou nada).

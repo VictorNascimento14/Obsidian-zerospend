@@ -39,3 +39,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #27 | [[2026-09-29-pr-027-pagina-assinaturas]] — feat(assinaturas): lista completa com busca, filtros e ordenação |
 | #28 | [[2026-09-29-pr-028-busca-global]] — feat(casca): busca global com ⌘K |
 | #29 | [[2026-09-29-pr-029-leitor-de-extrato]] — feat(importacao): leitor de extrato CSV e reconhecimento de fornecedores |
+| #30 | [[2026-09-29-pr-030-onboarding-extrato]] — feat(onboarding): subir o extrato do cartão e revisar o que foi reconhecido |
