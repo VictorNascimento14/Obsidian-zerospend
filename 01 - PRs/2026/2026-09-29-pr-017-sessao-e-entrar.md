@@ -7,7 +7,7 @@ pr: 17
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/17
 branch: feat/sessao-e-entrar
 tags: [pr, frontend, sessao, autenticacao]
-status: aberto
+status: merged
 ---
 
 # PR #17 — feat(sessao): sessão local, guarda de rota e tela de entrar
