@@ -7,7 +7,7 @@ pr: 34
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/34
 branch: feat/notificacoes
 tags: [pr, frontend, casca, alertas]
-status: aberto
+status: merged
 ---
 
 # PR #34 — feat(casca): sino de notificações no header
