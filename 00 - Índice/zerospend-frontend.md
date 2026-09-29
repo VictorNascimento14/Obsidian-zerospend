@@ -24,3 +24,4 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 
 - [[ModeloDeDominio]] — tipos, categorias, datas sem hora e formatação
 - [[RegrasDeCobranca]] — valor por mês, conversão, gasto mensal e próxima cobrança
+- [[DadosDeDemonstracao]] — as empresas e assinaturas da conta de demonstração
