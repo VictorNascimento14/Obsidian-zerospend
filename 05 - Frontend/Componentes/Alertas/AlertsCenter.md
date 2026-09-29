@@ -26,7 +26,7 @@ A central de alertas da empresa: o que pede atenção, com o jeito de tratar cad
 
 ## Comportamento
 
-- **Renovações nos próximos 7 dias**, da mais próxima: "GitHub renova em 2 dias — US$ 84,00 em
+- **Renovações nos próximos N dias** (a antecedência da empresa, [[AlertSettings]]), da mais próxima: "GitHub renova em 2 dias — US$ 84,00 em
   01/10/2026.", com "Dispensar".
 - **Ferramentas redundantes**, da maior economia: "Duplicidade em CRM — HubSpot e Pipedrive estão na
   mesma categoria…", com "Dispensar".
@@ -43,7 +43,7 @@ A central de alertas da empresa: o que pede atenção, com o jeito de tratar cad
 
 ## Estados (vazio, carregando, erro)
 
-- **Vazio**, por seção, com o ícone de confirmação em verde: "Nenhuma renovação nos próximos 7 dias.",
+- **Vazio**, por seção, com o ícone de confirmação em verde: "Nenhuma renovação nos próximos N dias.",
   "Nenhuma ferramenta redundante." e "Nada em revisão.".
 - **Carregando:** o esqueleto da [[GuardaDeSessao]].
 
@@ -58,3 +58,4 @@ A central de alertas da empresa: o que pede atenção, com o jeito de tratar cad
 
 - [[2026-09-29-pr-033-central-de-alertas]] — criado.
 - [[2026-09-29-pr-034-notificacoes]] — `useAlerts` e `dismissWithUndo` compartilhados com o sino ([[Notificacoes]]).
+- [[2026-09-29-pr-036-configuracoes-alertas]] — o título segue a antecedência da empresa.

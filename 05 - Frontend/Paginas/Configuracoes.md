@@ -21,9 +21,11 @@ ZeroSpend"), e as seções, uma embaixo da outra, em até `max-w-3xl`.
 ## Comportamento
 
 - **Empresa:** nome, moeda padrão e cotação do dólar ([[OrganizationSettings]]).
-- Chegam depois: antecedência e canais de alerta (ordem 34) e membros (ordem 35).
+- **Alertas:** antecedência e canais ([[AlertSettings]]).
+- Chega depois: membros (ordem 35).
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-016-casca]] — criada, com título e descrição.
 - [[2026-09-29-pr-035-configuracoes-empresa]] — a seção Empresa.
+- [[2026-09-29-pr-036-configuracoes-alertas]] — a seção Alertas.

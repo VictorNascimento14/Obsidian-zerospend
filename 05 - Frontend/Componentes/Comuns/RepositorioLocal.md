@@ -40,6 +40,8 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
   - `restoreSubscription(assinatura)`: o "desfazer" — volta com o mesmo id, uma vez só;
   - `updateOrganization(empresa, rascunho)`: nome, moeda padrão e cotação. Valida e só aceita quem
     está na sessão e administra a empresa ([[OrganizationSettings]]);
+  - `updateAlertSettings(empresa, preferências)`: antecedência e canais, com a mesma regra de papel
+    ([[AlertSettings]]);
   - `dismissAlert(empresa, chave)` e `restoreAlert(empresa, chave)`: as dispensas de alerta
     (`dismissals`), e dispensar de novo não muda nada ([[AlertsCenter]]).
 
@@ -60,7 +62,8 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - Tela **nunca** toca `localStorage`: lê por `useDatabase()` e escreve por `getRepository()`.
 - A validação da tela é conforto; a do repositório é a regra.
 - **Campo novo, com padrão na leitura, entra na mesma chave**, como coluna nova com valor padrão no
-  banco: o `parse` completa o que falta (`dismissals` ausente vira `[]`), e o que já estava gravado
+  banco: o `parse` completa o que falta (`dismissals` ausente vira `[]`; empresa sem antecedência e
+  canais ganha `defaultAlertSettings()`), e o que já estava gravado
   continua valendo. Há teste para isso.
 - **Mudança que quebra a leitura antiga** (renomear, trocar tipo, remover) pede chave nova e
   **migração**, nunca ressemear por cima de dado de alguém. Ver
@@ -74,3 +77,4 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - [[2026-09-29-pr-030-onboarding-extrato]] — `addSubscriptions` (tudo ou nada).
 - [[2026-09-29-pr-033-central-de-alertas]] — `dismissals`, `dismissAlert` e `restoreAlert`; campo novo com padrão na leitura.
 - [[2026-09-29-pr-035-configuracoes-empresa]] — `updateOrganization`, com a conferência de papel.
+- [[2026-09-29-pr-036-configuracoes-alertas]] — `updateAlertSettings`; empresa sem preferências lida com o padrão.

@@ -65,3 +65,4 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 - [[2026-09-29-pr-027-pagina-assinaturas]] — corpo da tabela separado (`SubscriptionRowsTable`); filtrar e ordenar.
 - [[2026-09-29-pr-029-leitor-de-extrato]] — monograma com a cor do catálogo.
 - [[2026-09-29-pr-030-onboarding-extrato]] — o vazio aponta para o [[Onboarding]] ("Importar do extrato").
+- [[2026-09-29-pr-036-configuracoes-alertas]] — o destaque "em N dias" segue a antecedência da empresa.

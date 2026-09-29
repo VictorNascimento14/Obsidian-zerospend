@@ -24,7 +24,9 @@ da distância é `formatDaysUntil` (`format.ts`). Testes em `alerts.test.ts`.
 
 - Entra no alerta toda assinatura **não cancelada** cuja **próxima cobrança efetiva**
   ([[RegrasDeCobranca]]) cai **de hoje até hoje + antecedência**, com as duas pontas incluídas.
-- Antecedência padrão: **7 dias** (a da especificação). Em revisão também avisa.
+- Antecedência: **a da empresa** (`organization.renewalLeadDays`), escolhida em [[AlertSettings]] entre
+  3, 7, 15, 30 e 60 dias (`RENEWAL_LEAD_OPTIONS`). O padrão é **7 dias** (a da especificação,
+  `defaultAlertSettings()`). Em revisão também avisa.
 - Cada alerta traz a assinatura, a data da cobrança (`chargeDate`) e os dias até ela (`daysUntil`, 0 =
   hoje). A lista vem da mais próxima para a mais distante.
 - A tela fala a distância com `formatDaysUntil`: "hoje", "amanhã", "em 5 dias".
@@ -33,7 +35,8 @@ da distância é `formatDaysUntil` (`format.ts`). Testes em `alerts.test.ts`.
 Na demonstração da Exemplo Tecnologia, com a antecedência padrão: GitHub (em 2 dias), Google
 Workspace (em 3) e Zoom (em 5).
 
-**Todos os alertas da empresa** (`currentAlerts`): as renovações e depois as duplicidades
+**Todos os alertas da empresa** (`currentAlerts(assinaturas, empresa, hoje)`, com a antecedência da
+empresa): as renovações e depois as duplicidades
 ([[Redundancia]]), cada uma com uma **chave de situação**:
 
 - renovação: `renovacao:<id da assinatura>:<data da cobrança>`, e a cobrança seguinte é outra
@@ -53,3 +56,4 @@ muda.
 
 - [[2026-09-29-pr-014-alertas-de-renovacao]] — criado.
 - [[2026-09-29-pr-033-central-de-alertas]] — `currentAlerts`, com as chaves de situação.
+- [[2026-09-29-pr-036-configuracoes-alertas]] — a antecedência passa a ser da empresa.

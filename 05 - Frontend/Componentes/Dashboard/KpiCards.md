@@ -26,7 +26,7 @@ Os quatro indicadores do topo do [[Dashboard]], da empresa da sessão.
 | Gasto mensal | `totalMonthlySpend`, na moeda padrão ([[RegrasDeCobranca]]) | "Com o dólar a R$ 5,40, a cotação da empresa" quando houve conversão; senão "Mensais e anuais, por mês" |
 | Economia potencial | [[Redundancia]] | "Por mês, cortando N ferramentas redundantes" ou "Nenhuma ferramenta redundante" |
 | Assinaturas ativas | só `active` | "E N em revisão" ou "Nenhuma em revisão" |
-| Renovações em 7 dias | [[AlertasDeRenovacao]] | "Próxima: GitHub, em 2 dias" ou "Nenhuma nos próximos 7 dias" |
+| Renovações em N dias (a antecedência da empresa, 7 por padrão) | [[AlertasDeRenovacao]] | "Próxima: GitHub, em 2 dias" ou "Nenhuma nos próximos N dias" |
 
 - Cancelada não entra em nenhum card.
 - Ícones na cor do kit, com o par escuro: cerulean (gasto), success (economia), plum (ativas) e
@@ -43,3 +43,4 @@ Os quatro indicadores do topo do [[Dashboard]], da empresa da sessão.
 
 - [[2026-09-29-pr-020-dashboard-kpis]] — criado.
 - [[2026-09-29-pr-032-integracoes]] — `Kpi` exportado, com o tom pelo nome da cor do kit (e `raspberry`).
+- [[2026-09-29-pr-036-configuracoes-alertas]] — "Renovações em N dias" com a antecedência da empresa.

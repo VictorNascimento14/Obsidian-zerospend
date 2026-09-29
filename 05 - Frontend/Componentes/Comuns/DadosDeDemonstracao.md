@@ -23,7 +23,7 @@ para mostrar uma regra do produto.
 
 As datas são **relativas ao dia em que a demonstração é criada** (`inDays` a partir de `today`).
 
-**Exemplo Tecnologia Ltda** (BRL, cotação R$ 5,40), gasto mensal R$ 7.444,75, três alertas de renovação
+**Exemplo Tecnologia Ltda** (BRL, cotação R$ 5,40, alertas com 7 dias e e-mail), gasto mensal R$ 7.444,75, três alertas de renovação
 (GitHub, Google Workspace e Zoom — [[AlertasDeRenovacao]]) e economia potencial de R$ 634,52
 ([[Redundancia]]):
 
@@ -47,7 +47,7 @@ As datas são **relativas ao dia em que a demonstração é criada** (`inDays` a
 
 Responsáveis: Admin Exemplo (Google Workspace, HubSpot) e Pessoa Exemplo (Figma, Canva).
 
-**Clínica Exemplo** (BRL, cotação R$ 5,40): Google Workspace (R$ 294,00, +14), Canva (R$ 34,90, +20),
+**Clínica Exemplo** (BRL, cotação R$ 5,40, alertas com 7 dias e e-mail): Google Workspace (R$ 294,00, +14), Canva (R$ 34,90, +20),
 Zoom (R$ 79,90, +2) e Conta Azul (R$ 129,00, +11) — todas mensais e ativas, sem redundância.
 
 **Conta de demonstração:** Admin Exemplo (`admin@zerospend.app`, senha "demonstracao"), administradora
@@ -66,3 +66,4 @@ das duas empresas ([[SessaoLocal]]).
 - [[2026-09-29-pr-017-sessao-e-entrar]] — a conta de demonstração e os vínculos com as duas empresas.
 - [[2026-09-29-pr-014-alertas-de-renovacao]] — ChatGPT Team de +6 para +10 dias: os alertas da demonstração são os três do briefing.
 - [[2026-09-29-pr-024-editar-assinatura]] — responsáveis fictícios em quatro assinaturas.
+- [[2026-09-29-pr-036-configuracoes-alertas]] — as empresas nascem com as preferências de alerta padrão.
