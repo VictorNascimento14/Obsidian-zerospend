@@ -33,7 +33,7 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 | Ciclo | Mensal ou Anual |
 | Próxima cobrança | a efetiva, `DD/MM/AAAA`; dentro da janela de alerta, "em N dias" em tom de alerta; cancelada: "—" |
 | Status | a etiqueta do status gravado e, se for o caso, "Ferramenta redundante" ([[Redundancia]]) |
-| (ações) | o menu "⋯" — "Editar" ([[SubscriptionForm]]) |
+| (ações) | o menu "⋯" — "Editar" e "Excluir" ([[SubscriptionForm]]) |
 
 - **Ordem:** da próxima cobrança para a mais distante; canceladas no fim, por nome.
 - **Etiquetas:** Ativa em success, Em revisão em warning, Cancelada em cinza, Ferramenta redundante em
@@ -56,3 +56,4 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 - [[2026-09-29-pr-021-tabela-de-assinaturas]] — criada, no dashboard.
 - [[2026-09-29-pr-023-nova-assinatura]] — o estado vazio aponta para "Nova assinatura".
 - [[2026-09-29-pr-024-editar-assinatura]] — coluna de ações (Editar) e o responsável embaixo do nome.
+- [[2026-09-29-pr-025-excluir-assinatura]] — "Excluir" no menu da linha.

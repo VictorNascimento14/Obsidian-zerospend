@@ -34,3 +34,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #22 | [[2026-09-29-pr-022-painel-de-alertas]] — feat(dashboard): painel de alertas e duplicidades |
 | #23 | [[2026-09-29-pr-023-nova-assinatura]] — feat(assinaturas): cadastro manual de assinatura |
 | #24 | [[2026-09-29-pr-024-editar-assinatura]] — feat(assinaturas): editar valor, ciclo, data, status e responsável |
+| #25 | [[2026-09-29-pr-025-excluir-assinatura]] — feat(assinaturas): excluir com confirmação e desfazer |

@@ -34,7 +34,8 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 - **Escrita:**
   - `addSubscription(empresa, rascunho)`: exige empresa existente;
   - `updateSubscription(id, mudanças)`: valida a mistura com o que já existia;
-  - `removeSubscription(id)`: devolve a removida, para o "desfazer".
+  - `removeSubscription(id)`: devolve a removida, para o "desfazer";
+  - `restoreSubscription(assinatura)`: o "desfazer" — volta com o mesmo id, uma vez só.
 
   Toda escrita valida, grava só os campos do modelo e avisa quem assina. Erro de campo sobe como
   `ValidationError` (com `fields`), e o armazenamento cheio sobe como a exceção do navegador — nos
@@ -59,3 +60,4 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 
 - [[2026-09-29-pr-013-repositorio-local]] — criado.
 - [[2026-09-29-pr-017-sessao-e-entrar]] — versão 2: usuários, vínculos e sessão (`startSession`, `endSession`).
+- [[2026-09-29-pr-025-excluir-assinatura]] — `restoreSubscription`.
