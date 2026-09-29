@@ -39,6 +39,7 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 | `Sheet` | `SheetTrigger`, `SheetContent`, `SheetHeader`, `SheetTitle`, `SheetDescription`, `SheetFooter`, `SheetClose` | `SheetContent side`: `top`, `right`, `bottom`, `left` |
 | `Tooltip` | `TooltipTrigger`, `TooltipContent`, `TooltipProvider` (no layout) | `TooltipContent side` |
 | `Table` | `TableHeader`, `TableBody`, `TableFooter`, `TableRow`, `TableHead`, `TableCell`, `TableCaption` | — (rola na horizontal no celular) |
+| `Command` | `CommandDialog`, `CommandInput`, `CommandList`, `CommandEmpty`, `CommandGroup`, `CommandItem`, `CommandSeparator`, `CommandShortcut` (e o `InputGroup` que o `CommandInput` usa) | `Command filter` (critério de busca) |
 | `Toaster` (Sonner) | montado no layout; o aviso sai por `toast()` / `toast.success()` de `sonner` | — |
 
 ## Comportamento
@@ -59,6 +60,7 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
   próprio, que diz quem muda junto. Mudanças feitas até aqui:
   - `Card` ganhou `shadow-sm` (a sombra Small do kit), como pede o briefing — vale para todo cartão.
   - `Dialog` e `Sheet`: o texto "Close" (leitor de tela e botão de rodapé) virou "Fechar".
+  - `CommandDialog`: título e descrição padrão (lidos por leitor de tela) em português.
   - `Toaster`: `fontFamily: "inherit"`, porque o CSS injetado pelo Sonner, fora de camada, trocava a
     fonte do toast pela do sistema.
 - O `outline` pinta com `background` (o fundo da página, `grey-50`): dentro de cartão ou modal, ele
@@ -66,6 +68,9 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 - Botão só de ícone (`size="icon…"`) leva `aria-label`.
 - Todo campo tem `Label` ligado pelo `htmlFor`. O chevron do select fica como o `base-nova` desenha
   (só o ícone), não no segmento `grey-50` do kit.
+- **Adicionar primitivo que depende de um já alterado** (o `command` depende do `dialog`): o CLI pergunta
+  se sobrescreve — responda não (`printf 'n' | npx shadcn add …`).
+- `CommandShortcut` é para atalho de teclado (letras espaçadas); valor vai num `span`.
 - **`DropdownMenuLabel` só dentro de `DropdownMenuGroup`.** Fora dele, a página inteira quebra com
   `Base UI: MenuGroupContext is missing. Menu group parts must be used within <Menu.Group>`.
 - O título do toast usa o tamanho do Sonner (13px), fora da escala do kit.
@@ -82,3 +87,4 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 - [[2026-09-29-pr-008-primitivos-sobreposicao]] — `Dialog`, `AlertDialog`, `DropdownMenu`, `Sheet`,
   `Tooltip` e toasts; textos de fechar em português.
 - [[2026-09-29-pr-009-tabela]] — `Table`.
+- [[2026-09-29-pr-028-busca-global]] — `Command` (com `cmdk`), sem sobrescrever o `dialog` traduzido.

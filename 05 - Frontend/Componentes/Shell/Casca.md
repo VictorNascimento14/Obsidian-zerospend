@@ -24,6 +24,7 @@ sidebar vira uma folha lateral aberta pelo header.
 | `src/components/layout/app-sidebar.tsx` | `AppSidebar`: marca + navegação, só no desktop (`md:`) |
 | `src/components/layout/app-header.tsx` | `AppHeader`: botão do menu do celular (folha lateral) e alternador de tema |
 | `src/components/layout/organization-switcher.tsx` | `OrganizationSwitcher`: a empresa atual e a troca; o diálogo "Nova empresa" |
+| `src/components/layout/global-search.tsx` | `GlobalSearch`: o botão "Buscar… ⌘K" e a paleta (páginas, assinaturas, empresas) |
 | `src/components/layout/user-menu.tsx` | `UserMenu`: avatar com as iniciais; nome, e-mail e "Sair" |
 | `src/components/layout/theme-toggle.tsx` | `ThemeToggle`: claro, escuro ou sistema |
 | `src/components/layout/brand.tsx` | `Brand`: monograma "Z" na cor primária + "ZeroSpend" |
@@ -42,6 +43,9 @@ sidebar vira uma folha lateral aberta pelo header.
 - **Empresa:** à esquerda do header (também no celular), o nome da empresa atual abre a lista das
   empresas da pessoa (a atual marcada) e "Nova empresa". Escolher troca a empresa da sessão e fecha o
   menu.
+- **Busca global:** "Buscar… ⌘K" (Ctrl K fora do Mac; só o ícone no celular). A tecla abre e fecha a
+  paleta: páginas, assinaturas da empresa atual (escolher abre `/assinaturas?busca=…`) e "Trocar para
+  …" as outras empresas. Filtra sem acento.
 - **Conta:** o avatar (iniciais) abre nome, e-mail e "Sair". A casca só aparece com sessão
   ([[GuardaDeSessao]]).
 - **Título da aba:** "Página · ZeroSpend" (modelo no layout raiz).
@@ -53,6 +57,9 @@ A casca não tem dado próprio: renderiza no servidor, e cada página cuida do s
 
 ## Regras de uso
 
+- Botão no header que precisa encolher (nome longo) leva `shrink`: o `Button` do shadcn tem `shrink-0`
+  na base.
+
 - Área nova entra em `NAV_ITEMS` — a sidebar e o menu do celular leem a mesma lista.
 - Peça nova do header só entra funcionando (seletor de empresa, busca, sino, avatar).
 - Toda página começa por `PageHeader`.
@@ -63,3 +70,4 @@ A casca não tem dado próprio: renderiza no servidor, e cada página cuida do s
 - [[2026-09-29-pr-017-sessao-e-entrar]] — avatar com "Sair"; a casca passa a exigir sessão.
 - [[2026-09-29-pr-019-seletor-de-empresa]] — seletor de empresa e "Nova empresa"; menus de rádio fecham ao escolher.
 - [[2026-09-29-pr-023-nova-assinatura]] — `PageHeader` com ações.
+- [[2026-09-29-pr-028-busca-global]] — busca global ⌘K; o seletor de empresa encolhe no celular.

@@ -27,7 +27,8 @@ A área `/assinaturas` da [[Casca]]. Descrição na tela: "Todas as assinaturas 
   - ordem: próxima cobrança, maior valor por mês ou nome (A–Z).
 - **Contagem:** "15 assinaturas"; com filtro, "2 de 15 assinaturas".
 - **Tabela:** a mesma do dashboard ([[SubscriptionsTable]]), com as ações de cada linha.
-- **Filtros** ficam na tela (não na URL): sair da página zera.
+- **Filtros** ficam na tela (não na URL): sair da página zera. A exceção é `?busca=`, que a busca
+  global usa para abrir a lista já filtrada.
 
 ## Estados (vazio, carregando, erro)
 
@@ -39,3 +40,4 @@ A área `/assinaturas` da [[Casca]]. Descrição na tela: "Todas as assinaturas 
 - [[2026-09-29-pr-016-casca]] — criada, com título e descrição.
 - [[2026-09-29-pr-023-nova-assinatura]] — botão "Nova assinatura" no topo ([[SubscriptionForm]]).
 - [[2026-09-29-pr-027-pagina-assinaturas]] — lista completa com busca, filtros e ordenação.
+- [[2026-09-29-pr-028-busca-global]] — lê o `?busca=` da busca global.
