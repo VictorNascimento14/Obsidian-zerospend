@@ -7,7 +7,7 @@ pr: 25
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/25
 branch: feat/excluir-assinatura
 tags: [pr, frontend, assinaturas]
-status: aberto
+status: merged
 ---
 
 # PR #25 — feat(assinaturas): excluir com confirmação e desfazer
