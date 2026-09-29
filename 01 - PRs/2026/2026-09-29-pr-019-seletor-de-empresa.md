@@ -7,7 +7,7 @@ pr: 19
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/19
 branch: feat/seletor-de-empresa
 tags: [pr, frontend, sessao, casca]
-status: aberto
+status: merged
 ---
 
 # PR #19 — feat(sessao): trocar de empresa no header e criar empresa nova
