@@ -7,7 +7,7 @@ pr: 30
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/30
 branch: feat/onboarding-extrato
 tags: [pr, frontend, onboarding, importacao]
-status: aberto
+status: merged
 ---
 
 # PR #30 — feat(onboarding): subir o extrato do cartão e revisar o que foi reconhecido
