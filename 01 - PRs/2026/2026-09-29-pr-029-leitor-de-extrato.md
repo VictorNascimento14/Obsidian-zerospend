@@ -7,7 +7,7 @@ pr: 29
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/29
 branch: feat/leitor-de-extrato
 tags: [pr, frontend, importacao]
-status: aberto
+status: merged
 ---
 
 # PR #29 — feat(importacao): leitor de extrato CSV e reconhecimento de fornecedores
