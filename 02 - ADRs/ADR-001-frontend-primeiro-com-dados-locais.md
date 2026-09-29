@@ -48,5 +48,6 @@ trocar de empresa, importar um extrato, editar e excluir assinatura, dispensar a
 - [[2026-09-29-pr-011-regras-de-cobranca]] — valor mensal, conversão de moeda e próxima cobrança efetiva.
 - [[2026-09-29-pr-013-repositorio-local]] — o repositório no `localStorage` (chave versionada, validação na escrita, `useSyncExternalStore`).
 - [[2026-09-29-pr-014-alertas-de-renovacao]] — regra de alertas de renovação.
+- [[2026-09-29-pr-015-redundancia]] — ferramentas redundantes e economia potencial.
 
 TODO: acrescentar os PRs das regras, do repositório local e da sessão conforme forem mergeados.

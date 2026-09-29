@@ -27,3 +27,4 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[DadosDeDemonstracao]] — as empresas e assinaturas da conta de demonstração
 - [[RepositorioLocal]] — leitura e escrita no `localStorage`, com validação
 - [[AlertasDeRenovacao]] — quais assinaturas renovam dentro da antecedência
+- [[Redundancia]] — ferramentas redundantes e economia potencial

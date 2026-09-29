@@ -24,7 +24,8 @@ para mostrar uma regra do produto.
 As datas são **relativas ao dia em que a demonstração é criada** (`inDays` a partir de `today`).
 
 **Exemplo Tecnologia Ltda** (BRL, cotação R$ 5,40), gasto mensal R$ 7.444,75, três alertas de renovação
-(GitHub, Google Workspace e Zoom — [[AlertasDeRenovacao]]):
+(GitHub, Google Workspace e Zoom — [[AlertasDeRenovacao]]) e economia potencial de R$ 634,52
+([[Redundancia]]):
 
 | Assinatura | Categoria | Cobrança | Ciclo | Próxima | Status | Por quê |
 |---|---|---|---|---|---|---|
