@@ -39,7 +39,8 @@ Nenhum.
 - **Pela próxima cobrança efetiva**, não pela data gravada: uma mensal com data vencida avança para a
   próxima cobrança real ([[RegrasDeCobranca]]).
 - **Cancelada não avisa; em revisão avisa.** A cobrança do que está em revisão é real até alguém
-  descartar ([[2026-09-29-pr-013-repositorio-local]] manda cancelada ficar fora de tudo).
+  descartar. A cancelada fica fora pela regra 5 do `CLAUDE.md` do repositório (cancelada não conta em
+  nada).
 - **Antecedência por parâmetro**, com 7 de padrão: a configuração por empresa é a ordem 34.
 - **A demonstração fica com os três alertas do briefing** (GitHub, Google Workspace e Zoom). Com o
   ChatGPT Team a 6 dias, seriam quatro, e o comentário das sementes dizia três.
