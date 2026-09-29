@@ -7,7 +7,7 @@ pr: 26
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/26
 branch: feat/revisar-deteccao
 tags: [pr, frontend, assinaturas]
-status: aberto
+status: merged
 ---
 
 # PR #26 — feat(assinaturas): confirmar ou descartar assinatura em revisão
