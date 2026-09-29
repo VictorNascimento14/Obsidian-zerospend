@@ -22,7 +22,8 @@ Quem está usando o ZeroSpend neste navegador, em qual empresa, e como a senha �
 | `src/lib/domain/types.ts` | `User` (com `passwordHash` e `passwordSalt`), `Membership`, `Role` |
 | `src/lib/data/repository.ts` | `Session`, `CurrentSession`, `currentSession(banco)`, `startSession`, `endSession` |
 | `src/lib/data/password.ts` | `hashPassword(senha, sal)` (PBKDF2-SHA-256, 100 mil iterações) e `newSalt()` |
-| `src/lib/data/auth.ts` | `signIn(repositório, e-mail, senha)`, `SignInError`, `normalizeEmail` |
+| `src/lib/data/auth.ts` | `signIn(repositório, e-mail, senha)`, `SignInError`, `normalizeEmail`, `createAccount(repositório, rascunho)` |
+| `src/lib/domain/validation.ts` | `validateAccountDraft` e `PERSONAL_EMAIL_DOMAINS` (e-mail corporativo) |
 | `src/lib/data/store.ts` | `useSession()` — a sessão resolvida, para a tela |
 
 ## Comportamento
@@ -38,6 +39,9 @@ Quem está usando o ZeroSpend neste navegador, em qual empresa, e como a senha �
   incorretos."
 - **Senha:** PBKDF2 com sal por pessoa; nunca em texto. A Web Crypto só existe em https ou
   `localhost` — fora disso, `hashPassword` falha com a explicação.
+- **Criar conta:** `createAccount` normaliza e valida (nome, e-mail corporativo, senha de 8+, empresa),
+  recusa e-mail que já tem conta e grava pessoa + empresa (em real, cotação inicial R$ 5,40) +
+  vínculo de administração + sessão numa só gravação (`addAccount`).
 - **Conta de demonstração:** `admin@zerospend.app`, senha "demonstracao" ([[DadosDeDemonstracao]]).
 
 ## Regras de uso
@@ -48,3 +52,4 @@ Quem está usando o ZeroSpend neste navegador, em qual empresa, e como a senha �
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-017-sessao-e-entrar]] — criada.
+- [[2026-09-29-pr-018-criar-conta]] — `createAccount` e a regra de e-mail corporativo.

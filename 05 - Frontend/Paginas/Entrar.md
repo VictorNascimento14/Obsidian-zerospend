@@ -27,6 +27,7 @@ A tela de entrada do ZeroSpend, fora da [[Casca]], centrada sobre o fundo.
 - **Aviso:** "Nesta versão, a conta fica guardada só neste navegador. Não use uma senha que você usa em
   outro lugar."
 - **Quem já tem sessão** é levado direto para o destino.
+- **"Não tem conta? Criar conta"** leva a [[CriarConta]].
 
 ## Estados (vazio, carregando, erro)
 
@@ -36,3 +37,4 @@ A tela de entrada do ZeroSpend, fora da [[Casca]], centrada sobre o fundo.
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-017-sessao-e-entrar]] — criada.
+- [[2026-09-29-pr-018-criar-conta]] — link para criar conta.

@@ -39,7 +39,10 @@ Exemplos (cotação de R$ 5,00): anual de US$ 120 → US$ 10/mês → R$ 50/mês
 - A data gravada nunca é reescrita pela regra: a próxima cobrança efetiva é calculada a cada leitura.
 - `today` vem de quem chama (`toIsoDate(new Date())` na tela).
 - Tetos anotados no código (`ponytail:`): dinheiro em `number`, e só duas moedas na conversão.
+- `DEFAULT_BRL_PER_USD` (5,40) é a cotação com que uma empresa nova começa — valor inicial, não
+  cotação do dia.
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-011-regras-de-cobranca]] — criado.
+- [[2026-09-29-pr-018-criar-conta]] — `DEFAULT_BRL_PER_USD`.

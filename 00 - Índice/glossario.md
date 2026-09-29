@@ -9,6 +9,7 @@ tags: [glossario]
 | Termo | Significado no ZeroSpend |
 |---|---|
 | **Assinatura** | Um software que a empresa paga de forma recorrente (`subscription`). |
+| **E-mail corporativo** | E-mail do domínio da empresa. A v1 recusa provedores pessoais (Gmail, Outlook e parecidos). |
 | **Empresa** | A organização dona das assinaturas (`organization`). Uma pessoa pode cuidar de várias. |
 | **Categoria** | O tipo de ferramenta (CRM, Design, Comunicação…), de uma lista fechada — é por ela que a redundância é detectada. |
 | **Ciclo** | De quanto em quanto tempo a cobrança se repete: mensal (`monthly`) ou anual (`annually`). |

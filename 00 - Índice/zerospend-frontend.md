@@ -19,6 +19,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[Alertas]]
 - [[Configuracoes]]
 - [[Entrar]]
+- [[CriarConta]]
 
 ## Componentes
 
@@ -28,6 +29,8 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[GuardaDeSessao]] — a casca só aparece com sessão
 
 ## Fluxos
+
+- [[criar-conta-ate-o-dashboard]] — de criar a conta até o painel
 
 ## Domínio e dados
 
