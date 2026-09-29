@@ -27,6 +27,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[Primitivos]] — componentes de base do shadcn (`base-nova`) e as regras de uso
 - [[Casca]] — sidebar, header, menu do celular e tema
 - [[GuardaDeSessao]] — a casca só aparece com sessão
+- [[KpiCards]] — os quatro indicadores do dashboard
 
 ## Fluxos
 

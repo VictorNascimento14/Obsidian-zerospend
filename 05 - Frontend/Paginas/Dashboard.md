@@ -19,8 +19,10 @@ A área `/dashboard` da [[Casca]]. Descrição na tela: "Gasto mensal, economia 
 
 ## Comportamento
 
-Por enquanto, só o `PageHeader`. O conteúdo chega em: Os KPIs (ordem 18), a `SubscriptionsTable` (ordem 19) e o painel de alertas e duplicidades (ordem 20).
+`PageHeader` e os quatro [[KpiCards]]. Ainda faltam a `SubscriptionsTable` (ordem 19) e o painel de
+alertas e duplicidades (ordem 20).
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-016-casca]] — criada, com título e descrição.
+- [[2026-09-29-pr-020-dashboard-kpis]] — os cards de KPI.
