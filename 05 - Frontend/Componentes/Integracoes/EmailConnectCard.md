@@ -2,7 +2,7 @@
 tipo: funcionalidade
 camada: frontend
 area: Integracoes
-rota: /onboarding
+rota: /onboarding · /integracoes
 ultima_atualizacao: 2026-09-29
 tags: [funcionalidade, integracoes, onboarding]
 ---
@@ -61,3 +61,4 @@ entre 2 e 14 dias atrás.
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-031-onboarding-email]] — criado, no [[Onboarding]].
+- [[2026-09-29-pr-032-integracoes]] — também na página [[Integracoes]].

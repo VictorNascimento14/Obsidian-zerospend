@@ -2,7 +2,7 @@
 tipo: funcionalidade
 camada: frontend
 area: Onboarding
-rota: /onboarding
+rota: /onboarding · /integracoes
 ultima_atualizacao: 2026-09-29
 tags: [funcionalidade, onboarding, importacao]
 ---
@@ -12,7 +12,7 @@ tags: [funcionalidade, onboarding, importacao]
 ## O que é
 
 O caminho do extrato do cartão até as assinaturas: a pessoa sobe o CSV, confere o que o
-[[LeitorDeExtrato]] reconheceu e importa. Fica no [[Onboarding]].
+[[LeitorDeExtrato]] reconheceu e importa. Aparece no [[Onboarding]] e em [[Integracoes]].
 
 ## Onde está no código
 
@@ -80,3 +80,4 @@ O caminho do extrato do cartão até as assinaturas: a pessoa sobe o CSV, confer
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-030-onboarding-extrato]] — criado.
+- [[2026-09-29-pr-032-integracoes]] — também na página [[Integracoes]].

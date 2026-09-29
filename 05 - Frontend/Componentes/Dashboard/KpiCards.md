@@ -15,7 +15,8 @@ Os quatro indicadores do topo do [[Dashboard]], da empresa da sessão.
 
 ## Onde está no código
 
-`src/components/dashboard/kpi-cards.tsx` (`KpiCards`); o cálculo é `computeKpis` em
+`src/components/dashboard/kpi-cards.tsx`: `KpiCards` e `Kpi`, o card de um indicador, que a página
+[[Integracoes]] também usa. O cálculo é `computeKpis` em
 `src/lib/domain/kpis.ts` (testes em `kpis.test.ts` e `seed.test.ts`).
 
 ## Comportamento
@@ -28,8 +29,9 @@ Os quatro indicadores do topo do [[Dashboard]], da empresa da sessão.
 | Renovações em 7 dias | [[AlertasDeRenovacao]] | "Próxima: GitHub, em 2 dias" ou "Nenhuma nos próximos 7 dias" |
 
 - Cancelada não entra em nenhum card.
-- Ícones na cor de estado do kit: cerulean (gasto), success (economia), plum (ativas), warning
-  (renovações), com o par escuro.
+- Ícones na cor do kit, com o par escuro: cerulean (gasto), success (economia), plum (ativas) e
+  warning (renovações). O `Kpi` recebe o tom pelo nome da família (`cerulean`, `raspberry`, `plum`,
+  `success`, `warning`), e não pelo papel no dashboard.
 - Grade: 1 coluna no celular, 2 a partir de `sm`, 4 a partir de `xl`.
 
 ## Estados (vazio, carregando, erro)
@@ -40,3 +42,4 @@ Os quatro indicadores do topo do [[Dashboard]], da empresa da sessão.
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-020-dashboard-kpis]] — criado.
+- [[2026-09-29-pr-032-integracoes]] — `Kpi` exportado, com o tom pelo nome da cor do kit (e `raspberry`).
