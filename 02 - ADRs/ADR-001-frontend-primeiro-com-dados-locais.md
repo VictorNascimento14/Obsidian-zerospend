@@ -46,5 +46,6 @@ trocar de empresa, importar um extrato, editar e excluir assinatura, dispensar a
 
 - [[2026-09-29-pr-010-dominio]] — tipos do domínio, categorias, datas sem hora, formatação e Vitest no CI.
 - [[2026-09-29-pr-011-regras-de-cobranca]] — valor mensal, conversão de moeda e próxima cobrança efetiva.
+- [[2026-09-29-pr-013-repositorio-local]] — o repositório no `localStorage` (chave versionada, validação na escrita, `useSyncExternalStore`).
 
 TODO: acrescentar os PRs das regras, do repositório local e da sessão conforme forem mergeados.

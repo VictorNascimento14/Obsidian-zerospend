@@ -22,3 +22,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #10 | [[2026-09-29-pr-010-dominio]] — feat(dominio): tipos, categorias e formatação de moeda e data |
 | #11 | [[2026-09-29-pr-011-regras-de-cobranca]] — feat(dominio): valor mensal, conversão de moeda e próxima cobrança efetiva |
 | #12 | [[2026-09-29-pr-012-sementes]] — feat(dados): empresas e assinaturas de demonstração |
+| #13 | [[2026-09-29-pr-013-repositorio-local]] — feat(dados): repositório local com validação |
