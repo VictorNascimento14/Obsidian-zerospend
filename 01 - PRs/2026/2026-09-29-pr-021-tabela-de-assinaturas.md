@@ -7,7 +7,7 @@ pr: 21
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/21
 branch: feat/tabela-de-assinaturas
 tags: [pr, frontend, dashboard, assinaturas]
-status: aberto
+status: merged
 ---
 
 # PR #21 — feat(dashboard): tabela de assinaturas no dashboard
