@@ -33,7 +33,7 @@ Nenhum novo: é o gasto da empresa, na tela dela.
 
 ## 🧠 Decisões técnicas
 
-- **Sem coluna "Ações" por enquanto.** Editar, excluir e revisar são as ordens 21 a 24; um menu sem
+- **Sem coluna "Ações" por enquanto.** Editar, excluir e revisar são as ordens 22 a 24; um menu sem
   efeito seria a tela prometendo o que o código não faz (regra 7 do `CLAUDE.md`). Ela entra com o
   primeiro uso.
 - **Monograma, nunca logotipo** (regra do design system). A cor sai do nome, estável entre sessões;
