@@ -48,6 +48,9 @@ As datas são **relativas ao dia em que a demonstração é criada** (`inDays` a
 **Clínica Exemplo** (BRL, cotação R$ 5,40): Google Workspace (R$ 294,00, +14), Canva (R$ 34,90, +20),
 Zoom (R$ 79,90, +2) e Conta Azul (R$ 129,00, +11) — todas mensais e ativas, sem redundância.
 
+**Conta de demonstração:** Admin Exemplo (`admin@zerospend.app`, senha "demonstracao"), administradora
+das duas empresas ([[SessaoLocal]]).
+
 ## Regras de uso
 
 - Mudou a demonstração? Atualize esta tabela e o teste do gasto mensal no mesmo PR.
@@ -58,4 +61,5 @@ Zoom (R$ 79,90, +2) e Conta Azul (R$ 129,00, +11) — todas mensais e ativas, se
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-012-sementes]] — criado.
+- [[2026-09-29-pr-017-sessao-e-entrar]] — a conta de demonstração e os vínculos com as duas empresas.
 - [[2026-09-29-pr-014-alertas-de-renovacao]] — ChatGPT Team de +6 para +10 dias: os alertas da demonstração são os três do briefing.

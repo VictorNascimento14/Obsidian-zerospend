@@ -23,6 +23,7 @@ sidebar vira uma folha lateral aberta pelo header.
 | `src/components/layout/nav-links.tsx` | `NavLinks`: os links, com a área atual marcada (`aria-current`) |
 | `src/components/layout/app-sidebar.tsx` | `AppSidebar`: marca + navegação, só no desktop (`md:`) |
 | `src/components/layout/app-header.tsx` | `AppHeader`: botão do menu do celular (folha lateral) e alternador de tema |
+| `src/components/layout/user-menu.tsx` | `UserMenu`: avatar com as iniciais; nome, e-mail e "Sair" |
 | `src/components/layout/theme-toggle.tsx` | `ThemeToggle`: claro, escuro ou sistema |
 | `src/components/layout/brand.tsx` | `Brand`: monograma "Z" na cor primária + "ZeroSpend" |
 | `src/components/layout/page-header.tsx` | `PageHeader`: título (H4 do kit, `text-2xl`) e descrição de cada página |
@@ -37,6 +38,8 @@ sidebar vira uma folha lateral aberta pelo header.
 - **Celular (< `md`):** a sidebar some; o header mostra "Abrir o menu", que abre a mesma navegação numa
   folha à esquerda. Escolher uma área fecha a folha.
 - **Tema:** menu com Claro, Escuro e Sistema; o ícone (sol/lua) troca pelo CSS.
+- **Conta:** o avatar (iniciais) abre nome, e-mail e "Sair". A casca só aparece com sessão
+  ([[GuardaDeSessao]]).
 - **Título da aba:** "Página · ZeroSpend" (modelo no layout raiz).
 - **Superfícies:** sidebar e header em `card` (brancos no claro); o conteúdo sobre o `background`.
 
@@ -53,3 +56,4 @@ A casca não tem dado próprio: renderiza no servidor, e cada página cuida do s
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-016-casca]] — criada: sidebar, header com menu do celular e tema, cinco áreas.
+- [[2026-09-29-pr-017-sessao-e-entrar]] — avatar com "Sair"; a casca passa a exigir sessão.

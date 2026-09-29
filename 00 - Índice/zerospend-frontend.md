@@ -18,12 +18,14 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[Integracoes]]
 - [[Alertas]]
 - [[Configuracoes]]
+- [[Entrar]]
 
 ## Componentes
 
 - [[Tema]] — tokens do kit, tokens semânticos, Inter e modo escuro
 - [[Primitivos]] — componentes de base do shadcn (`base-nova`) e as regras de uso
 - [[Casca]] — sidebar, header, menu do celular e tema
+- [[GuardaDeSessao]] — a casca só aparece com sessão
 
 ## Fluxos
 
@@ -35,3 +37,4 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[RepositorioLocal]] — leitura e escrita no `localStorage`, com validação
 - [[AlertasDeRenovacao]] — quais assinaturas renovam dentro da antecedência
 - [[Redundancia]] — ferramentas redundantes e economia potencial
+- [[SessaoLocal]] — pessoa, empresas, sessão e senha

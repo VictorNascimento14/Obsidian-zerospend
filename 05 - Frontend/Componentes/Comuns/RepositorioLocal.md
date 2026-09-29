@@ -25,10 +25,11 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 
 ## Comportamento
 
-- **Formato:** `{ version: 1, organizations, subscriptions }` na chave `zerospend:v1`.
+- **Formato:** `{ version: 2, organizations, subscriptions, users, memberships, session }` na chave
+  `zerospend:v2` (a v1, sem usuários, fica intacta no navegador — ver [[SessaoLocal]]).
 - **Navegador vazio:** a primeira leitura semeia a demonstração ([[DadosDeDemonstracao]]) com o dia
   local e grava.
-- **Conteúdo ilegível** (JSON quebrado, outra versão): copiado para `zerospend:v1:backup`, e a
+- **Conteúdo ilegível** (JSON quebrado, outra versão): copiado para `zerospend:v2:backup`, e a
   demonstração é semeada de novo.
 - **Escrita:**
   - `addSubscription(empresa, rascunho)`: exige empresa existente;
@@ -57,3 +58,4 @@ quando algo muda. É aqui que o Supabase entra depois — as telas não mudam.
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-013-repositorio-local]] — criado.
+- [[2026-09-29-pr-017-sessao-e-entrar]] — versão 2: usuários, vínculos e sessão (`startSession`, `endSession`).

@@ -26,3 +26,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #14 | [[2026-09-29-pr-014-alertas-de-renovacao]] — feat(dominio): alertas de renovação por antecedência |
 | #15 | [[2026-09-29-pr-015-redundancia]] — feat(dominio): ferramentas redundantes e economia estimada |
 | #16 | [[2026-09-29-pr-016-casca]] — ui(casca): sidebar, header e as páginas da navegação |
+| #17 | [[2026-09-29-pr-017-sessao-e-entrar]] — feat(sessao): sessão local, guarda de rota e tela de entrar |

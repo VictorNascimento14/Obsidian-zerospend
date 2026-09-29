@@ -49,5 +49,7 @@ trocar de empresa, importar um extrato, editar e excluir assinatura, dispensar a
 - [[2026-09-29-pr-013-repositorio-local]] — o repositório no `localStorage` (chave versionada, validação na escrita, `useSyncExternalStore`).
 - [[2026-09-29-pr-014-alertas-de-renovacao]] — regra de alertas de renovação.
 - [[2026-09-29-pr-015-redundancia]] — ferramentas redundantes e economia potencial.
+- [[2026-09-29-pr-017-sessao-e-entrar]] — sessão local e guarda de rota. A senha fica no navegador como
+  PBKDF2 com sal (não em texto) — mais cuidado que o mínimo desta ADR, sem virar segurança.
 
 TODO: acrescentar os PRs das regras, do repositório local e da sessão conforme forem mergeados.
