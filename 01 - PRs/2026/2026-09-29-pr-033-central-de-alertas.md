@@ -7,7 +7,7 @@ pr: 33
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/33
 branch: feat/central-de-alertas
 tags: [pr, frontend, alertas, dados]
-status: aberto
+status: merged
 ---
 
 # PR #33 — feat(alertas): central de alertas com dispensar
