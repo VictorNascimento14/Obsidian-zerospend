@@ -27,12 +27,22 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 | `Avatar` | `AvatarImage`, `AvatarFallback`, `AvatarGroup`, `AvatarGroupCount`, `AvatarBadge` | — |
 | `Separator` | — | `orientation`: `horizontal`, `vertical` |
 | `Skeleton` | — | — |
+| `Input` | — | `type` nativo; `aria-invalid` pinta o erro |
+| `Label` | — | — |
+| `Select` | `SelectTrigger`, `SelectValue`, `SelectContent`, `SelectItem`, `SelectGroup`, `SelectLabel`, `SelectSeparator`, `SelectScrollUpButton`, `SelectScrollDownButton` | `SelectTrigger size`: `default`, `sm` |
+| `Textarea` | — | `aria-invalid` pinta o erro |
+| `Switch` | — | `size`: `default`, `sm` |
+| `Checkbox` | — | — |
 
 ## Comportamento
 
 - Ícone dentro do botão ganha `data-icon="inline-start"` ou `"inline-end"`, que ajusta o respiro.
 - `Badge` aceita `render` (Base UI) para trocar o elemento sem perder o estilo.
 - Foco visível: anel de 3px na cor `ring` (cerulean) em todo primitivo interativo.
+- Erro de campo: `aria-invalid` no campo pinta borda e anel em `destructive`; a mensagem vai embaixo,
+  em `text-destructive`.
+- `Select` recebe a lista em `items` (`{ label, value }`): sem isso, o `SelectValue` mostra o valor
+  cru (`monthly`) em vez do rótulo ("Mensal").
 
 ## Regras de uso
 
@@ -42,6 +52,8 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 - O `outline` pinta com `background` (o fundo da página, `grey-50`): dentro de cartão ou modal, ele
   aparece levemente cinza. É o comportamento gerado, não defeito.
 - Botão só de ícone (`size="icon…"`) leva `aria-label`.
+- Todo campo tem `Label` ligado pelo `htmlFor`. O chevron do select fica como o `base-nova` desenha
+  (só o ícone), não no segmento `grey-50` do kit.
 - Status de assinatura não usa as variantes do `Badge` direto: vai por mapa de classes literais com a
   cor do kit (regra do `CLAUDE.md` do repositório). O formato é <A DEFINIR> no PR da tabela.
 
@@ -49,3 +61,5 @@ São **gerados** pelo CLI e vivem em `src/components/ui/`; o visual vem dos toke
 
 - [[2026-09-29-pr-006-primitivos-base]] — `Button`, `Badge`, `Card`, `Avatar`, `Separator` e
   `Skeleton`; `Card` com `shadow-sm`.
+- [[2026-09-29-pr-007-primitivos-formulario]] — `Input`, `Label`, `Select`, `Textarea`, `Switch` e
+  `Checkbox`.
