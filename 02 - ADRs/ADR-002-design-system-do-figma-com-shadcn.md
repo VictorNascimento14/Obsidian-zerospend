@@ -64,5 +64,7 @@ famílias de sucesso, alerta e perigo com tints e shades. O arquivo foi lido pel
 ## Implementado em
 
 - [[2026-09-29-pr-003-tema]] — paleta do kit, tokens semânticos, Inter e modo escuro.
+- [[2026-09-29-pr-005-titulos-do-kit]] — títulos H1–H4 nos tamanhos padrão do Tailwind.
+- [[2026-09-29-pr-006-primitivos-base]] — primeiros primitivos; `Card` com a sombra Small do kit.
 
 TODO: acrescentar os PRs dos primitivos conforme forem mergeados.
