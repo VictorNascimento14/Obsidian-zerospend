@@ -7,7 +7,7 @@ pr: 13
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/13
 branch: feat/repositorio-local
 tags: [pr, frontend, dados]
-status: aberto
+status: merged
 ---
 
 # PR #13 — feat(dados): repositório local com validação
