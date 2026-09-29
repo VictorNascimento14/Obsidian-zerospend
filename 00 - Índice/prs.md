@@ -20,3 +20,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #8 | [[2026-09-29-pr-008-primitivos-sobreposicao]] — ui(primitivos): adicionar Dialog, AlertDialog, DropdownMenu, Sheet, Tooltip e toasts |
 | #9 | [[2026-09-29-pr-009-tabela]] — ui(primitivos): adicionar Table |
 | #10 | [[2026-09-29-pr-010-dominio]] — feat(dominio): tipos, categorias e formatação de moeda e data |
+| #11 | [[2026-09-29-pr-011-regras-de-cobranca]] — feat(dominio): valor mensal, conversão de moeda e próxima cobrança efetiva |

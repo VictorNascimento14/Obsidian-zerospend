@@ -19,9 +19,9 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 
 | Arquivo | O que tem |
 |---|---|
-| `src/lib/domain/types.ts` | `Subscription`, `Organization`, `Currency` (`BRL`, `USD`), `BillingCycle` (`monthly`, `annually`), `SubscriptionStatus`, `SubscriptionSource`, `IsoDate` |
+| `src/lib/domain/types.ts` | `Subscription`, `Organization` (com `defaultCurrency` e `brlPerUsd`), `Currency` (`BRL`, `USD`), `BillingCycle` (`monthly`, `annually`), `SubscriptionStatus`, `SubscriptionSource`, `IsoDate` |
 | `src/lib/domain/categories.ts` | `CATEGORIES` (id → rótulo), `CATEGORY_IDS`, `isCategory` |
-| `src/lib/domain/dates.ts` | `isIsoDate`, `toIsoDate` |
+| `src/lib/domain/dates.ts` | `isIsoDate`, `toIsoDate`, `addMonths` |
 | `src/lib/domain/format.ts` | `formatMoney`, `formatDate`, `BILLING_CYCLE_LABELS`, `STATUS_LABELS`, `SOURCE_LABELS` |
 | `src/lib/domain/*.test.ts` | os testes (Vitest, fuso de São Paulo) |
 
@@ -49,3 +49,5 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-010-dominio]] — criado: tipos, categorias, datas sem hora e formatação.
+- [[2026-09-29-pr-011-regras-de-cobranca]] — empresa com moeda padrão e cotação; `addMonths`. As
+  regras de valor mensal e próxima cobrança estão em [[RegrasDeCobranca]].
