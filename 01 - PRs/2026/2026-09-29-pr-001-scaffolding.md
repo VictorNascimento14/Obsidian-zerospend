@@ -7,7 +7,7 @@ pr: 1
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/1
 branch: chore/scaffolding
 tags: [pr, infra, scaffolding]
-status: aberto
+status: merged
 ---
 
 # PR #1 — chore: scaffolding Next.js 16 + TypeScript + Tailwind v4 + ESLint
