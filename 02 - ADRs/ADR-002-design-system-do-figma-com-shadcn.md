@@ -31,7 +31,7 @@ famílias de sucesso, alerta e perigo com tints e shades. O arquivo foi lido pel
    `danger` (cada uma com `tint-50…300`, base e `shade-100…300`) e `grey-50…900`. Classe como
    `bg-slate-50` deixa de existir — e o build prova isso.
 4. **Os tokens semânticos do shadcn apontam para o kit:** `primary` → `cerulean`; `destructive` →
-   `danger-shade-100`; `border` → `grey-100`; `input` → `grey-300`; `ring` → `cerulean`; `muted` →
+   `danger-shade-200` (era `danger-shade-100`; ver Atualizações); `border` → `grey-100`; `input` → `grey-300`; `ring` → `cerulean`; `muted` →
    `grey-50`; `muted-foreground` → `grey-500`. O `secondary` do shadcn continua **neutro**; o
    "Secondary" do kit (Raspberry) é usado pelo nome `raspberry`, para não confundir os dois.
 5. **Tipografia Inter** com a escala do kit (H1–H4 e corpo a 145%); **cantos** 8px em botão e campo,
@@ -52,6 +52,17 @@ famílias de sucesso, alerta e perigo com tints e shades. O arquivo foi lido pel
   faz por `className`/variante, não editando o primitivo; mudança no primitivo é PR próprio.
 - ⚠️ O modo escuro não tem referência no Figma: foi desenhado aqui, com os mesmos tokens.
 
+## Atualizações
+
+- **2026-09-29, [[2026-09-29-pr-003-tema]]:** o `destructive` do modo claro passou de
+  `danger-shade-100` para `danger-shade-200`. O botão e a badge destrutivos do `base-nova` pintam o
+  fundo com a própria cor a 10%, e sobre o fundo da página (`grey-50`) o `shade-100` dá 4,10:1 —
+  reprova o AA da decisão 7. Com o `shade-200`: 5,72 na página e 6,32 no cartão. No escuro, o
+  `destructive` é `danger-tint-100`. A tabela completa dos tokens semânticos está em
+  [[linguagem-visual]].
+
 ## Implementado em
 
-TODO: preencher com os PRs do tema e dos primitivos conforme forem mergeados.
+- [[2026-09-29-pr-003-tema]] — paleta do kit, tokens semânticos, Inter e modo escuro.
+
+TODO: acrescentar os PRs dos primitivos conforme forem mergeados.

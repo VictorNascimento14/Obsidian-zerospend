@@ -79,12 +79,18 @@ Fonte **Inter**. Altura de linha do corpo: **145%**.
 | Body 3 | 12px (0,75rem) | 400 | — |
 | Text Link 1/2/3 | 16 / 14 / 12px | 500 (Medium), cor primária | — |
 
+No código: `text-h1`…`text-h4` aplicam tamanho, peso, tracking e altura de linha (1,2 a 1,3 — a
+altura dos títulos não está no kit) numa classe só; o corpo é `text-base`, `text-sm` e `text-xs`, a
+145%.
+
 ## Espaçamento, cantos e elevação
 
 - **Espaçamento:** 4 · 8 · 12 · 16 · 24 · 32 · 40 · 48 · 64 · 80 px — coincide com a escala padrão do
   Tailwind (`1`, `2`, `3`, `4`, `6`, `8`, `10`, `12`, `16`, `20`).
 - **Cantos:** 4 · 8 · 12 · 16 px. Botão e campo usam **8px**; cartão **12px** (o `rounded-xl` do
-  briefing); badge e busca são **pílula**.
+  briefing); badge e busca são **pílula**. No código: `rounded-sm` e `rounded-md` 4px (o kit não tem
+  6px), `rounded-lg` 8px, `rounded-xl` 12px, `rounded-2xl` 16px; pílula é `rounded-full` ou
+  `rounded-4xl`.
 - **Elevação** (sombra preta):
 
 | Nível | Camadas |
@@ -93,6 +99,9 @@ Fonte **Inter**. Altura de linha do corpo: **145%**.
 | Small | `0 1px 6px` a 15% |
 | Medium | `1.5px 2px 8px` a 10% + `-1px 0 8px` a 10% |
 | Large | `2.25px 3px 10px` a 10% + `-2px -1px 12px` a 10% |
+
+No código: `shadow-xs`, `shadow-sm`, `shadow-md` e `shadow-lg`. As outras sombras do Tailwind
+(`shadow-2xs`, `shadow-xl`, `shadow-2xl`) não existem.
 
 ## Ícones
 
@@ -119,4 +128,46 @@ biblioteca pedida no briefing (`lucide-react`).
 ## Modo escuro
 
 O kit **não** tem modo escuro; o briefing pede. É derivado da escala de cinza do próprio kit — ver
-[[ADR-002-design-system-do-figma-com-shadcn]] — e nenhuma cor fora do kit entra para isso.
+[[ADR-002-design-system-do-figma-com-shadcn]] — e nenhuma cor fora do kit entra para isso. Os valores
+estão na tabela de tokens semânticos, abaixo.
+
+## Tokens semânticos — o que a tela usa
+
+Os tokens do shadcn, com o valor do kit em cada modo (`src/app/globals.css`; ver [[Tema]]). A tela
+usa estes para superfície, texto e borda; cor crua do kit fica para estado. Criado em
+[[2026-09-29-pr-003-tema]].
+
+| Token | Claro | Escuro | Onde aparece |
+|---|---|---|---|
+| `background` | `grey-50` | `grey-900` | fundo da página; botão `outline` |
+| `foreground` | `grey-900` | `grey-50` | texto principal |
+| `card` · `popover` | `white` | `grey-800` | cartão · menu, modal, folha e toast |
+| `primary` | `cerulean` | `cerulean-tint-200` | botão principal, link, seleção |
+| `primary-foreground` | `white` | `grey-900` | texto sobre `primary` |
+| `secondary` · `accent` | `grey-100` | `grey-700` | botão secundário · item de menu em foco |
+| `muted` | `grey-50` | `grey-700` | fundo discreto: cabeçalho de tabela, esqueleto, hover do `ghost` |
+| `muted-foreground` | `grey-500` | `grey-300` | texto secundário |
+| `destructive` | `danger-shade-200` | `danger-tint-100` | ação destrutiva (texto, e fundo da mesma cor a 10% ou 20%) |
+| `border` | `grey-100` | `grey-700` | borda de cartão, divisória |
+| `input` | `grey-300` | `grey-600` | borda de campo |
+| `ring` | `cerulean` | `cerulean-tint-200` | anel de foco |
+
+Contraste dos pares de texto (o AA pede 4,5):
+
+| Par | Claro | Escuro |
+|---|---|---|
+| `foreground` sobre `background` · `card` | 16,53 · 18,32 | 16,53 · 13,13 |
+| `muted-foreground` sobre `background` · `card` · `muted` | 4,56 · 5,05 · 4,56 | 7,79 · 6,19 · 4,58 |
+| `primary-foreground` sobre `primary` | 5,05 | 8,51 |
+| `primary` (link) sobre `background` · `card` | 4,56 · 5,05 | 8,51 · 6,76 |
+| `secondary-foreground` sobre `secondary` | 14,17 | 9,71 |
+| `destructive` sobre `background` · `card` | 6,83 · 7,57 | 11,15 · 8,86 |
+| `destructive` sobre o próprio fundo translúcido, na página · no cartão | 5,72 · 6,32 | 7,04 · 5,47 |
+
+> ⚠️ **Borda de campo abaixo de 3:1.** `input` contra o branco dá 2,35 (no escuro, 1,86 contra o
+> cartão); o WCAG 1.4.11 pede 3:1 para o contorno de componente. É o desenho do kit: o campo também se
+> identifica pelo rótulo acima e pelo foco em `cerulean` (5,05). Se uma auditoria pedir, a troca é
+> `--input` para `grey-400` (3,39), num lugar só.
+
+> **`ghost` sobre o fundo da página não mostra hover:** no claro, `muted` e `background` são o mesmo
+> `grey-50`. Em cima do fundo, use `outline`.

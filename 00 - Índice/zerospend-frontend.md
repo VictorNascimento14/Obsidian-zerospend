@@ -15,6 +15,8 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 
 ## Componentes
 
+- [[Tema]] — tokens do kit, tokens semânticos, Inter e modo escuro
+
 ## Fluxos
 
 ## Domínio e dados
