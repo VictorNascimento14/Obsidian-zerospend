@@ -29,3 +29,4 @@ da tabela.
 - [[2026-09-29-pr-020-dashboard-kpis]] — os cards de KPI.
 - [[2026-09-29-pr-021-tabela-de-assinaturas]] — a tabela de assinaturas.
 - [[2026-09-29-pr-022-painel-de-alertas]] — o painel de alertas e duplicidades.
+- [[2026-09-29-pr-023-nova-assinatura]] — botão "Nova assinatura" no topo ([[SubscriptionForm]]).

@@ -24,3 +24,4 @@ Por enquanto, só o `PageHeader`. O conteúdo chega em: A lista completa com bus
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-016-casca]] — criada, com título e descrição.
+- [[2026-09-29-pr-023-nova-assinatura]] — botão "Nova assinatura" no topo ([[SubscriptionForm]]).

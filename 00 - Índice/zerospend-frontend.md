@@ -30,6 +30,7 @@ Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadc
 - [[KpiCards]] — os quatro indicadores do dashboard
 - [[SubscriptionsTable]] — a tabela de assinaturas, com status e redundância
 - [[AlertsPanel]] — renovações e duplicidades no dashboard
+- [[SubscriptionForm]] — cadastro manual e os campos de assinatura
 
 ## Fluxos
 

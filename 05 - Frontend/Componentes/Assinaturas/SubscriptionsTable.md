@@ -42,7 +42,8 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 
 ## Estados (vazio, carregando, erro)
 
-- **Vazio:** "Nenhuma assinatura cadastrada nesta empresa." (a tabela não aparece).
+- **Vazio:** "Nenhuma assinatura cadastrada nesta empresa. Use “Nova assinatura” para cadastrar a
+  primeira." (a tabela não aparece; o botão está no topo da página — [[SubscriptionForm]]).
 
 ## Regras de uso
 
@@ -51,3 +52,4 @@ custa por mês, quando cobra de novo e em que estado está. Aparece no [[Dashboa
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-021-tabela-de-assinaturas]] — criada, no dashboard.
+- [[2026-09-29-pr-023-nova-assinatura]] — o estado vazio aponta para "Nova assinatura".
