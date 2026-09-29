@@ -23,7 +23,8 @@ para mostrar uma regra do produto.
 
 As datas são **relativas ao dia em que a demonstração é criada** (`inDays` a partir de `today`).
 
-**Exemplo Tecnologia Ltda** (BRL, cotação R$ 5,40), gasto mensal R$ 7.444,75:
+**Exemplo Tecnologia Ltda** (BRL, cotação R$ 5,40), gasto mensal R$ 7.444,75, três alertas de renovação
+(GitHub, Google Workspace e Zoom — [[AlertasDeRenovacao]]):
 
 | Assinatura | Categoria | Cobrança | Ciclo | Próxima | Status | Por quê |
 |---|---|---|---|---|---|---|
@@ -40,7 +41,7 @@ As datas são **relativas ao dia em que a demonstração é criada** (`inDays` a
 | Gupy | RH | R$ 7.800,00 | Anual | +120 dias | Ativa | anual caro |
 | 1Password | Segurança | US$ 239,40 | Anual | +200 dias | Ativa | dólar · anual |
 | Dropbox | Armazenamento | R$ 119,00 | Mensal | +8 dias | Cancelada | não conta em nada |
-| ChatGPT Team | Outros | US$ 60,00 | Mensal | +6 dias | Em revisão | veio do extrato |
+| ChatGPT Team | Outros | US$ 60,00 | Mensal | +10 dias | Em revisão | veio do extrato |
 | Adobe Acrobat Pro | Outros | R$ 85,00 | Mensal | +25 dias | Em revisão | veio do extrato |
 
 **Clínica Exemplo** (BRL, cotação R$ 5,40): Google Workspace (R$ 294,00, +14), Canva (R$ 34,90, +20),
@@ -56,3 +57,4 @@ Zoom (R$ 79,90, +2) e Conta Azul (R$ 129,00, +11) — todas mensais e ativas, se
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-012-sementes]] — criado.
+- [[2026-09-29-pr-014-alertas-de-renovacao]] — ChatGPT Team de +6 para +10 dias: os alertas da demonstração são os três do briefing.

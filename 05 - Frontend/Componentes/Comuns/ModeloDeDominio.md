@@ -22,8 +22,8 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
 | `src/lib/domain/types.ts` | `Subscription`, `Organization` (com `defaultCurrency` e `brlPerUsd`), `IsoDate` e as listas `CURRENCIES`, `BILLING_CYCLES`, `SUBSCRIPTION_STATUSES`, `SUBSCRIPTION_SOURCES` (os tipos derivam delas) |
 | `src/lib/domain/validation.ts` | `validateSubscriptionDraft` (erro por campo, em português), `SubscriptionDraft` |
 | `src/lib/domain/categories.ts` | `CATEGORIES` (id → rótulo), `CATEGORY_IDS`, `isCategory` |
-| `src/lib/domain/dates.ts` | `isIsoDate`, `toIsoDate`, `addMonths`, `addDays` |
-| `src/lib/domain/format.ts` | `formatMoney`, `formatDate`, `BILLING_CYCLE_LABELS`, `STATUS_LABELS`, `SOURCE_LABELS` |
+| `src/lib/domain/dates.ts` | `isIsoDate`, `toIsoDate`, `addMonths`, `addDays`, `daysBetween` |
+| `src/lib/domain/format.ts` | `formatMoney`, `formatDate`, `formatDaysUntil`, `BILLING_CYCLE_LABELS`, `STATUS_LABELS`, `SOURCE_LABELS` |
 | `src/lib/domain/*.test.ts` | os testes (Vitest, fuso de São Paulo) |
 
 ## Comportamento
@@ -54,3 +54,4 @@ Os tipos do ZeroSpend, a lista de categorias e as funções que mostram dinheiro
   regras de valor mensal e próxima cobrança estão em [[RegrasDeCobranca]].
 - [[2026-09-29-pr-012-sementes]] — `addDays`, para as datas relativas de [[DadosDeDemonstracao]].
 - [[2026-09-29-pr-013-repositorio-local]] — listas em tempo de execução e `validateSubscriptionDraft`, usada pelo [[RepositorioLocal]].
+- [[2026-09-29-pr-014-alertas-de-renovacao]] — `daysBetween` e `formatDaysUntil`, para os [[AlertasDeRenovacao]].
