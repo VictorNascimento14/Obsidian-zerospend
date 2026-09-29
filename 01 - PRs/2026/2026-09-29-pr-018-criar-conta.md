@@ -7,7 +7,7 @@ pr: 18
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/18
 branch: feat/criar-conta
 tags: [pr, frontend, sessao, autenticacao]
-status: aberto
+status: merged
 ---
 
 # PR #18 — feat(sessao): criar conta com e-mail corporativo e empresa
