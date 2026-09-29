@@ -35,3 +35,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #23 | [[2026-09-29-pr-023-nova-assinatura]] — feat(assinaturas): cadastro manual de assinatura |
 | #24 | [[2026-09-29-pr-024-editar-assinatura]] — feat(assinaturas): editar valor, ciclo, data, status e responsável |
 | #25 | [[2026-09-29-pr-025-excluir-assinatura]] — feat(assinaturas): excluir com confirmação e desfazer |
+| #26 | [[2026-09-29-pr-026-revisar-deteccao]] — feat(assinaturas): confirmar ou descartar assinatura em revisão |

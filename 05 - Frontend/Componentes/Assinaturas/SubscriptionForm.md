@@ -43,6 +43,9 @@ que os dois compartilham.
 - **Excluir:** "⋯ → Excluir" pede confirmação ("Ela sai da tabela, do gasto mensal e dos alertas.
   Logo depois, dá para desfazer."). Depois, o aviso "Assinatura de Slack excluída." traz
   "Desfazer", que devolve a assinatura com o mesmo id.
+- **Revisar (linha em revisão):** o menu vira "Confirmar" (status ativa: "Assinatura de ChatGPT Team
+  confirmada."), "Descartar" (sai da lista, com "Desfazer"; sem diálogo — é triagem) e "Editar". O
+  "Excluir" não aparece ali: descartar já é excluir.
 
 ## Estados (vazio, carregando, erro)
 
@@ -58,3 +61,4 @@ que os dois compartilham.
 - [[2026-09-29-pr-023-nova-assinatura]] — criado: cadastro manual.
 - [[2026-09-29-pr-024-editar-assinatura]] — edição, status e responsável.
 - [[2026-09-29-pr-025-excluir-assinatura]] — excluir com confirmação e desfazer.
+- [[2026-09-29-pr-026-revisar-deteccao]] — confirmar ou descartar o que está em revisão.
