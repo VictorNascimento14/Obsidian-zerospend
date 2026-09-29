@@ -7,7 +7,7 @@ pr: 24
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/24
 branch: feat/editar-assinatura
 tags: [pr, frontend, assinaturas]
-status: aberto
+status: merged
 ---
 
 # PR #24 — feat(assinaturas): editar valor, ciclo, data, status e responsável
