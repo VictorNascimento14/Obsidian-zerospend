@@ -19,11 +19,13 @@ A área `/dashboard` da [[Casca]]. Descrição na tela: "Gasto mensal, economia 
 
 ## Comportamento
 
-`PageHeader`, os quatro [[KpiCards]] e a [[SubscriptionsTable]]. Ainda falta o painel de alertas e
-duplicidades (ordem 20).
+`PageHeader`, os quatro [[KpiCards]], a [[SubscriptionsTable]] e o [[AlertsPanel]] — tudo o que o
+briefing lista. A partir de 1600px, tabela e painel ficam lado a lado; abaixo disso, o painel vem antes
+da tabela.
 
 ## Histórico de mudanças
 
 - [[2026-09-29-pr-016-casca]] — criada, com título e descrição.
 - [[2026-09-29-pr-020-dashboard-kpis]] — os cards de KPI.
 - [[2026-09-29-pr-021-tabela-de-assinaturas]] — a tabela de assinaturas.
+- [[2026-09-29-pr-022-painel-de-alertas]] — o painel de alertas e duplicidades.

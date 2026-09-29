@@ -31,3 +31,4 @@ Toda mudança no repositório de código vira uma nota aqui. Mais recente embaix
 | #19 | [[2026-09-29-pr-019-seletor-de-empresa]] — feat(sessao): trocar de empresa no header e criar empresa nova |
 | #20 | [[2026-09-29-pr-020-dashboard-kpis]] — feat(dashboard): cards de KPI com gasto mensal e economia |
 | #21 | [[2026-09-29-pr-021-tabela-de-assinaturas]] — feat(dashboard): tabela de assinaturas no dashboard |
+| #22 | [[2026-09-29-pr-022-painel-de-alertas]] — feat(dashboard): painel de alertas e duplicidades |
