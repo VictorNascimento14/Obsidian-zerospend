@@ -7,7 +7,7 @@ pr: 15
 url: https://github.com/VictorNascimento14/ZeroSpend/pull/15
 branch: feat/redundancia
 tags: [pr, frontend, dominio, redundancia]
-status: aberto
+status: merged
 ---
 
 # PR #15 — feat(dominio): ferramentas redundantes e economia estimada
